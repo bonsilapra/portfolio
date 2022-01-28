@@ -1,0 +1,119 @@
+:root {
+    --primary: #0B3B5C;
+    --primary-light: #ABDEFF;
+    --dark: #0D222E;
+    --medium: #9FABB5;
+    --light: #F6F6FF;
+}
+
+.navigation {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.navigation-container {
+    background-color: var(--primary);
+    width: 100%;
+    height: 80px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-light);
+    transition: 0.3s ease-out;
+}
+
+.navigation-container a:hover {
+    color: var(--dark);
+    text-shadow: 0 0 10px var(--medium);
+    transform: scale(1.2);
+    transition: 0.3s ease-in;
+} 
+
+.navigation-link-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s ease-out;
+}
+
+.social-logo {
+    color: var(--primary-light);
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav-menu {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+
+    .navigation-link-wrapper {
+        display: none;
+    }
+
+    .menu-icon {
+        color: var(--primary-light) ;
+        display: block;
+        margin-left: auto;
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+    }
+
+    .navigation {
+        padding: 0;
+    }
+
+    .navigation-container {
+        height: 50px;
+        transition: 0.3s ease-out;
+        padding-left: 35px;
+        padding-right: 10px;
+    }
+
+    .nav-menu {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        height: 450px;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        display: block;
+        flex-direction: column;
+        background: var(--primary);
+        top: 70px;
+        left: 0;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+
+}

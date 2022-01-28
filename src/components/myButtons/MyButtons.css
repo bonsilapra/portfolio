@@ -1,0 +1,117 @@
+:root {
+    --primary: #0B3B5C;
+    --primary-light: #ABDEFF;
+    --dark: #0D222E;
+    --medium: #9FABB5;
+    --light: #F6F6FF;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 3px 10px;
+}
+
+/* STYLE */
+
+.btn--primary {
+    background-color: var(--primary-light);
+    color: var(--primary);
+    border: 3px solid var(--primary-light);
+}
+
+.btn--primary-rev {
+    background-color: var(--primary);
+    color: var(--primary-light);
+    border: 3px solid var(--primary);
+}
+
+.btn--primary-rev:hover {
+    background-color: var(--primary);
+    color: var(--dark);
+    border: 3px solid var(--primary);
+    text-shadow: 0 0 10px var(--medium);
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+}
+
+.btn--primary-rev-arrow {
+    background-color: var(--primary);
+    color: var(--primary-light);
+    border: 3px solid var(--primary);
+    transition: 0.3s ease-out;
+}
+
+.btn--primary-rev-arrow:hover {
+    background-color: var(--primary);
+    color: var(--dark);
+    border: 3px solid var(--primary);
+    text-shadow: 0 0 10px var(--medium);
+    transform:  translateY(-10px);
+    transition: 0.3s ease-out;
+}
+
+.btn--mobile-menu {
+    background-color: var(--primary);
+    color: var(--primary-light);
+    border: 3px solid var(--primary);
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    transition: 0.3s ease-out;
+}
+
+.btn--mobile-menu:hover {
+    background-color: var(--primary-light);
+    color: var(--primary);
+    border: 3px solid var(--primary-light);
+    transition: 0.3s linear;
+}
+
+/* SHAPE */
+
+.btn--square {
+    border-radius: 10px;
+}
+
+.btn--round {
+    border-radius: 50%;
+    padding: 5px 5px;
+    width: 50px;
+    height: 50px;
+} 
+
+.btn--mobile {
+    border-radius: 0;
+}
+
+/* SIZE */
+
+.btn--small {
+    padding: 0px 10px;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.btn--medium {
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.btn--large {
+    padding: 10px 25px;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 5px;
+}
+
+.btn--large-mobile {
+    padding: 15px 25px;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 0;
+}
