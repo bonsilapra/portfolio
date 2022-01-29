@@ -44,7 +44,7 @@
 .footer-link-wrapper a:hover {
     color: var(--dark);
     text-shadow: 0 0 10px var(--medium);
-    transition: 0.3s ease-out;
+    transition: 0.1s ease-out;
 } 
 
 .social-logo {

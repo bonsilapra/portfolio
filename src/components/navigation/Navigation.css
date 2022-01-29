@@ -32,7 +32,7 @@
     color: var(--dark);
     text-shadow: 0 0 10px var(--medium);
     transform: scale(1.2);
-    transition: 0.3s ease-in;
+    transition: 0.1s ease-in;
 } 
 
 .navigation-link-wrapper {
@@ -74,7 +74,7 @@
         margin-left: auto;
         font-size: 1.8rem;
         cursor: pointer;
-        transition: 0.3s ease-out;
+        transition: 0.1s ease-out;
     }
 
     .navigation {

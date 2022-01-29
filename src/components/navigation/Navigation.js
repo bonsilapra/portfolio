@@ -10,8 +10,6 @@ function Navigation() {
     const closeMobileMenu = () => setClick(false);
 
 
-
-
     return (
         <div className='navigation'>
             <div className='navigation-container'>
@@ -23,130 +21,130 @@ function Navigation() {
                 >
                     <i className='fab fa-github' />
                 </a>
-                    <div className= {click ? 'nav-menu active' : 'nav-menu'}>
-                        <div className={click ? 'mobile' : ''}>
-                            <MyButton
-                                buttonStyle='btn--mobile-menu'
-                                buttonShape='btn--mobile'
-                                buttonSize='btn--large-mobile'
-                                onClick={closeMobileMenu}
-                            >
-                                About me
-                            </MyButton>  
-                        </div>  
-                        <div className={click ? 'mobile' : ''}>
-                            <MyButton
-                                buttonStyle='btn--mobile-menu'
-                                buttonShape='btn--mobile'
-                                buttonSize='btn--large-mobile'
-                                onClick={closeMobileMenu}
-                            >
-                                Projects
-                            </MyButton>   
-                        </div>
-                        <div className={click ? 'mobile' : ''}>
-                            <MyButton
-                                buttonStyle='btn--mobile-menu'
-                                buttonShape='btn--mobile'
-                                buttonSize='btn--large-mobile'
-                                onClick={closeMobileMenu}
-                            >
-                                Skills
-                            </MyButton>  
-                        </div>
-                        <div className={click ? 'mobile' : ''}> 
-                            <MyButton
-                                buttonStyle='btn--mobile-menu'
-                                buttonShape='btn--mobile'
-                                buttonSize='btn--large-mobile'
-                                onClick={closeMobileMenu}
-                            >
-                                My hobbies
-                            </MyButton>   
-                        </div> 
-                        <div className={click ? 'mobile' : ''}> 
-                            <MyButton
-                                buttonStyle='btn--mobile-menu'
-                                buttonShape='btn--mobile'
-                                buttonSize='btn--large-mobile'
-                                onClick={closeMobileMenu}
-                            >
-                                My dogs
-                            </MyButton>
-                        </div>
-                        <div className={click ? 'mobile' : ''}>
-                            <MyButton
-                                buttonStyle='btn--mobile-menu'
-                                buttonShape='btn--mobile'
-                                buttonSize='btn--large-mobile'
-                                onClick={closeMobileMenu}
-                            >
-                                Contact
-                            </MyButton>   
-                        </div>        
+                <div className= {click ? 'nav-menu active' : 'nav-menu'}>
+                    <div className={click ? 'mobile' : ''}>
+                        <MyButton
+                            buttonStyle='btn--mobile-menu'
+                            buttonShape='btn--mobile'
+                            buttonSize='btn--large-mobile'
+                            onClick={closeMobileMenu}
+                        >
+                            About me
+                        </MyButton>  
+                    </div>  
+                    <div className={click ? 'mobile' : ''}>
+                        <MyButton
+                            buttonStyle='btn--mobile-menu'
+                            buttonShape='btn--mobile'
+                            buttonSize='btn--large-mobile'
+                            onClick={closeMobileMenu}
+                        >
+                            Projects
+                        </MyButton>   
                     </div>
-                    <div className='navigation-link-wrapper'>
-                        <div>
-                            <MyButton
-                                buttonStyle='btn--primary-rev'
-                                buttonShape='btn--square'
-                                buttonSize='btn--large'
-                                // onClick={scrollToTop}
-                            >
-                                About me
-                            </MyButton>  
-                        </div>  
-                        <div>
-                            <MyButton
-                                buttonStyle='btn--primary-rev'
-                                buttonShape='btn--square'
-                                buttonSize='btn--large'
-                                // onClick={scrollToTop}
-                            >
-                                Projects
-                            </MyButton>   
-                        </div>
-                        <div>
-                            <MyButton
-                                buttonStyle='btn--primary-rev'
-                                buttonShape='btn--square'
-                                buttonSize='btn--large'
-                                // onClick={scrollToTop}
-                            >
-                                Skills
-                            </MyButton>  
-                        </div>
-                        <div> 
-                            <MyButton
-                                buttonStyle='btn--primary-rev'
-                                buttonShape='btn--square'
-                                buttonSize='btn--large'
-                                // onClick={scrollToTop}
-                            >
-                                My hobbies
-                            </MyButton>   
-                        </div> 
-                        <div> 
-                            <MyButton
-                                buttonStyle='btn--primary-rev'
-                                buttonShape='btn--square'
-                                buttonSize='btn--large'
-                                // onClick={scrollToTop}
-                            >
-                                My dogs
-                            </MyButton>
-                        </div>
-                        <div>
-                            <MyButton
-                                buttonStyle='btn--primary-rev'
-                                buttonShape='btn--square'
-                                buttonSize='btn--large'
-                                // onClick={scrollToTop}
-                            >
-                                Contact
-                            </MyButton>   
-                        </div>        
+                    <div className={click ? 'mobile' : ''}>
+                        <MyButton
+                            buttonStyle='btn--mobile-menu'
+                            buttonShape='btn--mobile'
+                            buttonSize='btn--large-mobile'
+                            onClick={closeMobileMenu}
+                        >
+                            Skills
+                        </MyButton>  
                     </div>
+                    <div className={click ? 'mobile' : ''}> 
+                        <MyButton
+                            buttonStyle='btn--mobile-menu'
+                            buttonShape='btn--mobile'
+                            buttonSize='btn--large-mobile'
+                            onClick={closeMobileMenu}
+                        >
+                            My hobbies
+                        </MyButton>   
+                    </div> 
+                    <div className={click ? 'mobile' : ''}> 
+                        <MyButton
+                            buttonStyle='btn--mobile-menu'
+                            buttonShape='btn--mobile'
+                            buttonSize='btn--large-mobile'
+                            onClick={closeMobileMenu}
+                        >
+                            My dogs
+                        </MyButton>
+                    </div>
+                    <div className={click ? 'mobile' : ''}>
+                        <MyButton
+                            buttonStyle='btn--mobile-menu'
+                            buttonShape='btn--mobile'
+                            buttonSize='btn--large-mobile'
+                            onClick={closeMobileMenu}
+                        >
+                            Contact
+                        </MyButton>   
+                    </div>        
+                </div>
+                <div className='navigation-link-wrapper'>
+                    <div>
+                        <MyButton
+                            buttonStyle='btn--primary-rev'
+                            buttonShape='btn--square'
+                            buttonSize='btn--large'
+                            // onClick={scrollToTop}
+                        >
+                            About me
+                        </MyButton>  
+                    </div>  
+                    <div>
+                        <MyButton
+                            buttonStyle='btn--primary-rev'
+                            buttonShape='btn--square'
+                            buttonSize='btn--large'
+                            // onClick={scrollToTop}
+                        >
+                            Projects
+                        </MyButton>   
+                    </div>
+                    <div>
+                        <MyButton
+                            buttonStyle='btn--primary-rev'
+                            buttonShape='btn--square'
+                            buttonSize='btn--large'
+                            // onClick={scrollToTop}
+                        >
+                            Skills
+                        </MyButton>  
+                    </div>
+                    <div> 
+                        <MyButton
+                            buttonStyle='btn--primary-rev'
+                            buttonShape='btn--square'
+                            buttonSize='btn--large'
+                            // onClick={scrollToTop}
+                        >
+                            My hobbies
+                        </MyButton>   
+                    </div> 
+                    <div> 
+                        <MyButton
+                            buttonStyle='btn--primary-rev'
+                            buttonShape='btn--square'
+                            buttonSize='btn--large'
+                            // onClick={scrollToTop}
+                        >
+                            My dogs
+                        </MyButton>
+                    </div>
+                    <div>
+                        <MyButton
+                            buttonStyle='btn--primary-rev'
+                            buttonShape='btn--square'
+                            buttonSize='btn--large'
+                            // onClick={scrollToTop}
+                        >
+                            Contact
+                        </MyButton>   
+                    </div>        
+                </div>
                 <div className='menu-icon'>
                     <MyButton 
                         buttonStyle='btn--primary-rev'

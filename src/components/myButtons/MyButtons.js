@@ -5,6 +5,8 @@ const STYLES = [
     'btn--primary', 
     'btn--primary-rev', 
     'btn--primary-rev-arrow',
+    'btn--primary-rev-start',
+    'btn--red',
     'btn--mobile-menu'
 ];
 

@@ -1,0 +1,92 @@
+vh:root {
+    --primary: #0B3B5C;
+    --primary-light: #ABDEFF;
+    --dark: #0D222E;
+    --medium: #9FABB5;
+    --light: #F6F6FF;
+}
+
+/* START */
+
+.start-page-container {
+    background: linear-gradient(to bottom, #0B3B5C 20px, #ABDEFF 80%, #F6F6FF );
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+}
+
+.start-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    text-shadow: 0 0 10px var(--primary);
+    padding-bottom: 8vh;
+    text-align: center;
+}
+
+.start-page-content h1 {
+    padding-bottom: 2vh;
+}
+
+.start-page-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+
+.start-page-button {
+    padding: 20px;
+}
+
+/* ABOUT */
+
+.about-page-container {
+    background: linear-gradient(to top, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
+    min-height: 100vh;
+}
+
+.projects-page-container {
+    background: linear-gradient(to bottom, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
+    min-height: 100vh;
+}
+
+.skills-page-container {
+    background: linear-gradient(to top, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF);
+    min-height: 100vh;
+}
+
+.hobbies-page-container {
+    background: linear-gradient(to bottom, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
+    min-height: 100vh;
+}
+
+.dogs-page-container {
+    background: linear-gradient(to top, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
+    min-height: 100vh;
+}
+
+.contact-page-container {
+    background: linear-gradient(to bottom, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
+    min-height: 100vh;
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+/* START */
+    .start-page-container {
+        height: calc(100vh - 70px);
+    }
+
+    .start-page-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+}
