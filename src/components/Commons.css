@@ -38,6 +38,7 @@ vh:root {
     top: 10px;
     padding-right: 10px;
     height: 0;
+
 }
 
 /* START */
@@ -86,7 +87,6 @@ vh:root {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--light);
 }
 
 .about-page-content {
@@ -95,7 +95,7 @@ vh:root {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    color: var(--light);
+    color: var(--dark);
 }
 
 
@@ -104,26 +104,150 @@ vh:root {
 .projects-page-container {
     background: linear-gradient(to bottom, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.projects-page-content {
+    display: flex;
+    width: 95vw;
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--dark);
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+    padding: 10px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    padding: 10px;
+}
+
+.project-text h2 {
+    padding-bottom: 30px;
+}
+
+.project-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    width: 400px;
+    font-size: 50px;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* SKILLS */
 
 .skills-page-container {
     background: linear-gradient(to top, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.skills-page-content {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--dark);
+}
+
+/* HOBBIES */
 
 .hobbies-page-container {
     background: linear-gradient(to bottom, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.hobbies-page-content {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--dark);
+}
+
+/* DOGS */
 
 .dogs-page-container {
     background: linear-gradient(to top, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.dogs-page-content {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--dark);
+}
+
+/* CONTACT */
 
 .contact-page-container {
     background: linear-gradient(to bottom, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
-    min-height: 100vh;
+    height: calc(100vh - 130px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page-content {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--dark);
 }
 
 

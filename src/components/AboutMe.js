@@ -28,20 +28,20 @@ function AboutMe() {
             </div>
             <div className='scroll-container'>
                 <MyButton
-                    buttonStyle='btn--next'
-                    buttonShadow='btn--dark'
-                    buttonShape='btn--round'
-                    onClick={() => scrollTo('projects')}
-                >
-                    <i className="fas fa-chevron-down" style={{fontSize:'25px'}}></i>
-                </MyButton>
-                <MyButton
                     buttonStyle='btn--previous'
                     buttonShadow='btn--dark'
                     buttonShape='btn--round'
                     onClick={() => scrollTo('navigation')}
                 >
                     <i className="fas fa-chevron-up" style={{fontSize:'25px'}}></i>
+                </MyButton>
+                <MyButton
+                    buttonStyle='btn--next'
+                    buttonShadow='btn--dark'
+                    buttonShape='btn--round'
+                    onClick={() => scrollTo('projects')}
+                >
+                    <i className="fas fa-chevron-down" style={{fontSize:'25px'}}></i>
                 </MyButton>
             </div>
         </div>

@@ -22,7 +22,7 @@ function Footer() {
                     onClick={scrollToTop}
                     title="Back to top"
                 >
-                    <i className="fas fa-chevron-up" style={{fontSize:'25px'}}></i>
+                    <i className="fas fa-angle-double-up" style={{fontSize:'25px'}}></i>
                 </MyButton>
             </div>
             <div className='footer-container'>
