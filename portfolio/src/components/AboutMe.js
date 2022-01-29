@@ -10,7 +10,6 @@ function AboutMe() {
             behavior: 'smooth'
         })
     }
-
     return (
         <div className='about-page-container'>
             <div className='title dark'>
@@ -18,7 +17,7 @@ function AboutMe() {
             </div>
             <div className='about-page-content'>
                 <div>
-                    <p>lorem ipsum</p>
+                    <p>lorem ipsumfbvzsxvzs </p>
                 </div>
                 <div>
                 <p>lorem ipsum</p>
