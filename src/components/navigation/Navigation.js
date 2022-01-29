@@ -9,6 +9,11 @@ function Navigation() {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
+    const scrollTo = (page) => {
+        document.getElementById(page).scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
 
     return (
         <div className='navigation'>
@@ -27,7 +32,7 @@ function Navigation() {
                             buttonStyle='btn--mobile-menu'
                             buttonShape='btn--mobile'
                             buttonSize='btn--large-mobile'
-                            onClick={closeMobileMenu}
+                            onClick={() => {scrollTo('aboutMe'); closeMobileMenu()}}
                         >
                             About me
                         </MyButton>  
@@ -37,7 +42,7 @@ function Navigation() {
                             buttonStyle='btn--mobile-menu'
                             buttonShape='btn--mobile'
                             buttonSize='btn--large-mobile'
-                            onClick={closeMobileMenu}
+                            onClick={() => {scrollTo('projects'); closeMobileMenu()}}
                         >
                             Projects
                         </MyButton>   
@@ -47,7 +52,7 @@ function Navigation() {
                             buttonStyle='btn--mobile-menu'
                             buttonShape='btn--mobile'
                             buttonSize='btn--large-mobile'
-                            onClick={closeMobileMenu}
+                            onClick={() => {scrollTo('skills'); closeMobileMenu()}}
                         >
                             Skills
                         </MyButton>  
@@ -57,7 +62,7 @@ function Navigation() {
                             buttonStyle='btn--mobile-menu'
                             buttonShape='btn--mobile'
                             buttonSize='btn--large-mobile'
-                            onClick={closeMobileMenu}
+                            onClick={() => {scrollTo('hobbies'); closeMobileMenu()}}
                         >
                             My hobbies
                         </MyButton>   
@@ -67,7 +72,7 @@ function Navigation() {
                             buttonStyle='btn--mobile-menu'
                             buttonShape='btn--mobile'
                             buttonSize='btn--large-mobile'
-                            onClick={closeMobileMenu}
+                            onClick={() => {scrollTo('dogs'); closeMobileMenu()}}
                         >
                             My dogs
                         </MyButton>
@@ -77,7 +82,7 @@ function Navigation() {
                             buttonStyle='btn--mobile-menu'
                             buttonShape='btn--mobile'
                             buttonSize='btn--large-mobile'
-                            onClick={closeMobileMenu}
+                            onClick={() => {scrollTo('contact'); closeMobileMenu()}}
                         >
                             Contact
                         </MyButton>   
@@ -89,7 +94,7 @@ function Navigation() {
                             buttonStyle='btn--primary-rev'
                             buttonShape='btn--square'
                             buttonSize='btn--large'
-                            // onClick={scrollToTop}
+                            onClick={() => {scrollTo('aboutMe'); closeMobileMenu()}}
                         >
                             About me
                         </MyButton>  
@@ -99,7 +104,7 @@ function Navigation() {
                             buttonStyle='btn--primary-rev'
                             buttonShape='btn--square'
                             buttonSize='btn--large'
-                            // onClick={scrollToTop}
+                            onClick={() => {scrollTo('projects'); closeMobileMenu()}}
                         >
                             Projects
                         </MyButton>   
@@ -109,7 +114,7 @@ function Navigation() {
                             buttonStyle='btn--primary-rev'
                             buttonShape='btn--square'
                             buttonSize='btn--large'
-                            // onClick={scrollToTop}
+                            onClick={() => {scrollTo('skills'); closeMobileMenu()}}
                         >
                             Skills
                         </MyButton>  
@@ -119,7 +124,7 @@ function Navigation() {
                             buttonStyle='btn--primary-rev'
                             buttonShape='btn--square'
                             buttonSize='btn--large'
-                            // onClick={scrollToTop}
+                            onClick={() => {scrollTo('hobbies'); closeMobileMenu()}}
                         >
                             My hobbies
                         </MyButton>   
@@ -129,7 +134,7 @@ function Navigation() {
                             buttonStyle='btn--primary-rev'
                             buttonShape='btn--square'
                             buttonSize='btn--large'
-                            // onClick={scrollToTop}
+                            onClick={() => {scrollTo('dogs'); closeMobileMenu()}}
                         >
                             My dogs
                         </MyButton>
@@ -139,7 +144,7 @@ function Navigation() {
                             buttonStyle='btn--primary-rev'
                             buttonShape='btn--square'
                             buttonSize='btn--large'
-                            // onClick={scrollToTop}
+                            onClick={() => {scrollTo('contact'); closeMobileMenu()}}
                         >
                             Contact
                         </MyButton>   

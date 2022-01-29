@@ -1,14 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Commons.css';
 import { MyButton } from './myButtons/MyButtons.js';
 
 
 function Start() {
 
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-
-
+    const scrollTo = (page) => {
+        document.getElementById(page).scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
 
     return (
         <div className='start-page-container'>
@@ -21,6 +22,7 @@ function Start() {
                         <MyButton
                             buttonStyle='btn--primary'
                             buttonSize='btn--large'
+                            onClick={() => scrollTo('projects')}
                         >
                             Projects
                         </MyButton>
@@ -29,16 +31,18 @@ function Start() {
                         <MyButton
                             buttonStyle='btn--red'
                             buttonSize='btn--large'
+                            onClick={() => scrollTo('contact')}
                         >
                             Contact
                         </MyButton>
                     </div>
                 </div>
-            <div className='start-button-container'>
+            <div>
                 <MyButton
-                    buttonStyle='btn--primary-rev-start'
+                    buttonStyle='btn--next'
+                    buttonShadow='btn--light'
                     buttonShape='btn--round'
-                    // onClick={scrollToTop}
+                    onClick={() => scrollTo('aboutMe')}
                 >
                     <i className="fas fa-chevron-down" style={{fontSize:'25px'}}></i>
                 </MyButton>

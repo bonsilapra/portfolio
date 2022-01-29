@@ -5,9 +5,17 @@ const STYLES = [
     'btn--primary', 
     'btn--primary-rev', 
     'btn--primary-rev-arrow',
-    'btn--primary-rev-start',
+    'btn--next',
+    'btn--previous',
+    'btn--start',
     'btn--red',
     'btn--mobile-menu'
+];
+
+const SHADOW = [
+    '', 
+    'btn--dark',
+    'btn--light',
 ];
 
 const SHAPES = [
@@ -30,12 +38,17 @@ export const MyButton = ({
     style,
     title,
     buttonStyle,
+    buttonShadow,
     buttonShape,
     buttonSize
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle)
         ? buttonStyle
         : STYLES[0];
+    
+    const checkButtonShadow = SHADOW.includes(buttonShadow)
+    ? buttonShadow
+    : SHADOW[0];
 
     const checkButtonShape = SHAPES.includes(buttonShape) ? buttonShape : SHAPES[0];
 
@@ -43,7 +56,7 @@ export const MyButton = ({
 
     return (
         <button
-        className={`btn ${checkButtonStyle} ${checkButtonShape} ${checkButtonSize}`}
+        className={`btn ${checkButtonStyle} ${checkButtonShadow} ${checkButtonShape} ${checkButtonSize}`}
         onClick={onClick}
         type={type}
         style={style}

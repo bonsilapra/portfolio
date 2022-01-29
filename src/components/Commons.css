@@ -6,6 +6,40 @@ vh:root {
     --light: #F6F6FF;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.title.light {
+    color: var(--light);
+    text-shadow: 0 0 10px var(--primary);
+}
+
+.title.dark {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--light);
+}
+
+.scroll-container {
+    margin-top: auto;
+    padding: 20px;
+}
+
+.back-to-top {
+    display: flex;
+    justify-content: flex-end;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    padding-right: 10px;
+    height: 0;
+}
+
 /* START */
 
 .start-page-container {
@@ -49,7 +83,23 @@ vh:root {
 .about-page-container {
     background: linear-gradient(to top, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--light);
 }
+
+.about-page-content {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--light);
+}
+
+
+/* PROJECTS */
 
 .projects-page-container {
     background: linear-gradient(to bottom, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
@@ -80,6 +130,7 @@ vh:root {
 
 @media screen and (max-width: 960px) {
 
+
 /* START */
     .start-page-container {
         height: calc(100vh - 70px);
@@ -89,4 +140,23 @@ vh:root {
         display: flex;
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 400px) {
+
+    .title {
+        font-size: large;
+        text-align: center;
+    }
+
+/* START */
+    .start-page-content {
+        font-size: large;
+        padding-bottom: 4vh;
+    }
+
+    .start-page-buttons {
+        padding-bottom: 2vh;
+    }
+
 }

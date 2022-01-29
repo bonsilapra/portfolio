@@ -11,19 +11,56 @@ import Skills from './components/Skills';
 import MyHobbies from './components/MyHobbies';
 import MyDogs from './components/MyDogs';
 import Contact from './components/Contact';
+import { MyButton } from './components/myButtons/MyButtons.js';
+import './components/Commons.css';
 
+
+const scrollToTop = () =>{
+  window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+  });
+};
 
 ReactDOM.render(
 
+
   <React.StrictMode>
-    <Navigation />
-    <Start />
-    <AboutMe />
-    <Projects />
-    <Skills />
-    <MyHobbies />
-    <MyDogs />
-    <Contact />
+    <div id='navigation'>
+      <Navigation />
+    </div>
+    <div id='start'>
+      <Start />
+    </div>
+      <div className='back-to-top'>
+          <MyButton
+              buttonStyle='btn--primary-rev-arrow'
+              buttonShadow='btn--dark'
+              buttonShape='btn--round'
+              onClick={() => scrollToTop()}
+              title='Back to top'
+          >
+              <i className="fas fa-angle-double-up" style={{fontSize:'25px'}}></i>
+          </MyButton>
+      </div>
+    <div id="aboutMe">
+      <AboutMe />
+    </div>
+    <div id="projects">
+      <Projects />
+    </div>
+    <div id='skills'>
+      <Skills />
+    </div>
+    <div id='hobbies'>
+      <MyHobbies />
+    </div>
+    <div id='dogs'>
+      <MyDogs />
+    </div>
+    <div id="contact">
+      <Contact />
+    </div>
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
