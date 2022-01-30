@@ -9,7 +9,8 @@ const STYLES = [
     'btn--previous',
     'btn--start',
     'btn--red',
-    'btn--mobile-menu'
+    'btn--mobile-menu',
+    'btn--tech'
 ];
 
 const SHADOW = [
@@ -37,6 +38,7 @@ export const MyButton = ({
     onClick,
     style,
     title,
+    disabled,
     buttonStyle,
     buttonShadow,
     buttonShape,
@@ -61,6 +63,7 @@ export const MyButton = ({
         type={type}
         style={style}
         title={title}
+        disabled={disabled}
         >
         {children}
         </button>

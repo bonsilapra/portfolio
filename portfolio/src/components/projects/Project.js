@@ -4,29 +4,30 @@ import './Projects.css';
 import { MyButton } from '../myButtons/MyButtons.js';
 
 
-function Project(appName, appDescription,appIcons, img, linkLive, linkGithub) {
+function Project({appName, appDescription,appIcons, img, linkLive, linkGithub}) {
 
 
     return (
         <div className='project-container'>
             <div className='project-description'>
                 <div className='project-text'>
-                    <h2>{appName}Todo app</h2>
-                    <p>{appDescription}This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js</p>
-                <div className='project-icons'>
-                    <div>
-                        <i className="fab fa-react"></i>
+                    <h2>{appName}</h2>
+                    <p>{appDescription}</p>
+                    <div className='project-icons'>
+                        {appIcons &&
+                        appIcons.map((icon) =>
+                            <div key={icon} className='project-icon'>
+                                <MyButton
+                                    buttonStyle='btn--tech'
+                                    buttonShape='btn--square'
+                                    buttonSize='btn--medium'
+                                    disabled={true}
+                                >
+                                    {icon}
+                                </ MyButton>
+                            </div>
+                        )}
                     </div>
-                    <div>
-                        <i className="fab fa-js-square"></i>
-                    </div>
-                    <div>
-                        <i className="fab fa-html5"></i>
-                    </div>
-                    <div>
-                        <i className="fab fa-css3-alt"></i>
-                    </div>
-                </div>
                 </div>
             </div>
             <div className='project-img-container'>

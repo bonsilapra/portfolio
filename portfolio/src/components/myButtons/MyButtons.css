@@ -102,7 +102,6 @@
     transition: 0.3s ease-out;
 }
 
-
 .btn--start {
     background-color: var(--primary-light);
     color: var(--primary);
@@ -110,7 +109,6 @@
     box-shadow: 0 0 10px var(--primary);
     transition: 0.3s ease-out;
 }
-
 
 .btn--primary-rev-previous:hover {
     background-color: var(--primary);
@@ -153,6 +151,15 @@
     border: 3px solid var(--primary-light);
     transition: 0.3s linear;
 }
+
+.btn--tech {
+    background-color: transparent;
+    color: var(--dark);
+    border: 3px solid var(--dark);
+    text-shadow: 0 0 10px var(--light);  
+    cursor: default; 
+}
+
 
 /* SHAPE */
 

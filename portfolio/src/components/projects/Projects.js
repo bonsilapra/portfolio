@@ -1,7 +1,11 @@
 import React from 'react';
 import '../Commons.css';
 import './Projects.css';
+import Project from './Project';
 import todo from '../../images/todo.png'
+import portfolio from '../../images/portfolio.png'
+import yourshelfy from '../../images/yourshelfy.png'
+import kgp from '../../images/kgp.png'
 import { MyButton } from '../myButtons/MyButtons.js';
 
 
@@ -19,57 +23,38 @@ function Projects() {
                 <h1>Projects</h1>
             </div>
             <div className='projects-page-content'>
-                <div className='project-container'>
-                    <div className='project-description'>
-                        <div className='project-text'>
-                            <h2>Todo app</h2>
-                            <p>This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js</p>
-                        <div className='project-icons'>
-                            <div>
-                                <i className="fab fa-react"></i>
-                            </div>
-                            <div>
-                                <i className="fab fa-js-square"></i>
-                            </div>
-                            <div>
-                                <i className="fab fa-html5"></i>
-                            </div>
-                            <div>
-                                <i className="fab fa-css3-alt"></i>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div className='project-img-container'>
-                        <img src={todo} alt="todo" className='project-img'/>
-                        <div className='project-links'>
-                            <div>
-                                <a href='https://github.com/bonsilapra/todo-list' target='blank'>
-                                    <MyButton
-                                        buttonStyle='btn--red'
-                                        buttonShadow='btn--light'
-                                        buttonShape='btn--square'
-                                        buttonSize='btn--large'
-                                    >
-                                        LIVE DEMO
-                                    </ MyButton>
-                                </a>
-                            </div>
-                            <div>
-                                <a href='https://github.com/bonsilapra/todo-list' target='blank'>
-                                    <MyButton
-                                        buttonStyle='btn--primary'
-                                        buttonShadow='btn--light'
-                                        buttonShape='btn--square'
-                                        buttonSize='btn--large'
-                                    >
-                                        GITHUB
-                                    </ MyButton>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Project 
+                    appName='Mountains'
+                    appDescription='App about mountain trips'
+                    appIcons={["React", "JavaScript", "HTML", "CSS"]}  
+                    img={kgp} 
+                    linkLive=''
+                    linkGithub='https://github.com/bonsilapra/mountains' 
+                />
+                <Project 
+                    appName='Yourshelfy'
+                    appDescription='App to keep order'
+                    appIcons={["React", "Redux", "JavaScript", "HTML", "CSS"]} 
+                    img={yourshelfy} 
+                    linkLive=''
+                    linkGithub='https://github.com/bonsilapra/yourshelfy' 
+                />
+                <Project 
+                    appName='Portfolio'
+                    appDescription='It is my personal website. Here you can find my portfolio and information about me. While creating this website, I mainly practiced using CSS.'
+                    appIcons={["React", "JavaScript", "HTML", "CSS"]}  
+                    img={portfolio} 
+                    linkLive=''
+                    linkGithub='https://github.com/bonsilapra/portfolio' 
+                />
+                <Project 
+                    appName='Todo App'
+                    appDescription='This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js'
+                    appIcons={["React", "JavaScript", "HTML", "CSS"]}  
+                    img={todo} 
+                    linkLive=''
+                    linkGithub='https://github.com/bonsilapra/todo-list' 
+                />
             </div>
             <div className='scroll-container'>
                 <MyButton

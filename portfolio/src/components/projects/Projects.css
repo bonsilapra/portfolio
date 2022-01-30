@@ -46,16 +46,22 @@
 
         .project-text h2 {
             padding-bottom: 30px;
+            text-shadow: 0 0 10px var(--light);  
         }
 
         .project-icons {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            flex-wrap: wrap;
             align-items: center;
-            padding-top: 20px;
             width: 30vw;
             font-size: 50px;
+            padding-top: 20px;
+        }
+
+        .project-icon {
+            display: flex
         }
 
     .project-img-container {
@@ -68,6 +74,7 @@
         position: relative;
         transition: 0.5s ease;
         border: 5px solid var(--primary);
+        background-color: var(--primary);
     }
 
     .project-img-container:hover .project-img {
