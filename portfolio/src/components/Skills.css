@@ -11,8 +11,23 @@
 .skills-page-content {
     display: flex;
     width: 95vw;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     color: var(--dark);
+}
+
+.skills-logos {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skills-logo {
+    display: flex;
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
 }

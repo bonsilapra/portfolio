@@ -27,7 +27,7 @@ function Contact() {
                     <img></img>
                 </div>
             </div>
-            <div className='scroll-container'>
+            <div className='scroll-container' style={{paddingBottom:'30px'}}>
                 <MyButton
                     buttonStyle='btn--previous'
                     buttonShadow='btn--light'

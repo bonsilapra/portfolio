@@ -1,6 +1,11 @@
 import React from 'react';
 import './Commons.css';
 import './Skills.css';
+import reactLogo from '../images/logos/reactLogo.png'
+import reduxLogo from '../images/logos/reduxLogo.png'
+import jsLogo from '../images/logos/jsLogo.png'
+import htmlLogo from '../images/logos/htmlLogo.png'
+import cssLogo from '../images/logos/cssLogo.png'
 import { MyButton } from './myButtons/MyButtons.js';
 
 
@@ -18,13 +23,22 @@ function Skills() {
                 <h1>Skills</h1>
             </div>
             <div className='skills-page-content'>
-                <div>
-                    <p>lorem ipsum</p>
-                </div>
-                <div>
-                <p>lorem ipsum</p>
-
-                    <img></img>
+                <div className='skills-logos'>
+                    <div>
+                        <img src={reactLogo} alt="react-logo" className='skills-logo'/>
+                    </div>
+                    <div>
+                        <img src={reduxLogo} alt="react-logo" className='skills-logo'/>
+                    </div>
+                    <div>
+                        <img src={jsLogo} alt="css-logo" className='skills-logo'/>
+                    </div>
+                    <div>
+                        <img src={htmlLogo} alt="css-logo" className='skills-logo'/>
+                    </div>
+                    <div>
+                        <img src={cssLogo} alt="css-logo" className='skills-logo'/>
+                    </div>
                 </div>
             </div>
             <div className='scroll-container'>

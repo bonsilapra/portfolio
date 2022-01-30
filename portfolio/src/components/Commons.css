@@ -27,7 +27,10 @@ vh:root {
 
 .scroll-container {
     margin-top: auto;
-    padding: 20px;
+    padding-top: 100px;
+    bottom: 20px;
+    position: sticky;
+    position: -webkit-sticky;
 }
 
 .back-to-top {
