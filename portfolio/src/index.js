@@ -6,7 +6,7 @@ import Navigation from './components/navigation/Navigation';
 import Footer from './components/footer/Footer';
 import Start from './components/Start';
 import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
+import Projects from './components/projects/Projects';
 import Skills from './components/Skills';
 import MyHobbies from './components/MyHobbies';
 import MyDogs from './components/MyDogs';

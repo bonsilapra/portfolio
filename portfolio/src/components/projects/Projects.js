@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
-import './Commons.css';
-import todo from '../images/todo.png'
-import { MyButton } from './myButtons/MyButtons.js';
+import React from 'react';
+import '../Commons.css';
+import './Projects.css';
+import todo from '../../images/todo.png'
+import { MyButton } from '../myButtons/MyButtons.js';
 
 
 function Projects() {
@@ -40,7 +41,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className='project-img-container'>
-                        {/* <img src={todo} alt="todo" className='project-img'/> */}
+                        <img src={todo} alt="todo" className='project-img'/>
                         <div className='project-links'>
                             <div>
                                 <a href='https://github.com/bonsilapra/todo-list' target='blank'>

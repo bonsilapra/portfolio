@@ -1,0 +1,18 @@
+/* CONTACT */
+
+.contact-page-container {
+    background: linear-gradient(to bottom, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
+    height: calc(100vh - 130px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page-content {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--dark);
+}

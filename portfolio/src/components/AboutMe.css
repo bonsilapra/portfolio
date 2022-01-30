@@ -1,0 +1,23 @@
+/* ABOUT */
+
+.about-page-container {
+    background: linear-gradient(to top, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-page-content {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--dark);
+}
+
+
+@media screen and (max-width: 960px) {
+
+}
