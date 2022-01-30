@@ -28,7 +28,7 @@ function Projects() {
                     appDescription='App about mountain trips'
                     appIcons={["React", "JavaScript", "HTML", "CSS"]}  
                     img={kgp} 
-                    linkLive=''
+                    linkLive='http://joanna-falkowska.pl/trips/'
                     linkGithub='https://github.com/bonsilapra/mountains' 
                 />
                 <Project 

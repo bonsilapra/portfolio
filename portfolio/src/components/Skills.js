@@ -6,6 +6,12 @@ import reduxLogo from '../images/logos/reduxLogo.png'
 import jsLogo from '../images/logos/jsLogo.png'
 import htmlLogo from '../images/logos/htmlLogo.png'
 import cssLogo from '../images/logos/cssLogo.png'
+import githubLogo from '../images/logos/githubLogo.png'
+import vscLogo from '../images/logos/vscLogo.png'
+import trelloLogo from '../images/logos/trelloLogo.png'
+import autocadLogo from '../images/logos/autocadLogo.png'
+
+
 import { MyButton } from './myButtons/MyButtons.js';
 
 
@@ -16,6 +22,8 @@ function Skills() {
             behavior: 'smooth'
         })
     }
+    const skillLogos = [reactLogo, reduxLogo, jsLogo, htmlLogo, cssLogo]
+    const toolsLogos = [githubLogo, vscLogo, trelloLogo, autocadLogo]
 
     return (
         <div className='skills-page-container'>
@@ -24,21 +32,18 @@ function Skills() {
             </div>
             <div className='skills-page-content'>
                 <div className='skills-logos'>
-                    <div>
-                        <img src={reactLogo} alt="react-logo" className='skills-logo'/>
-                    </div>
-                    <div>
-                        <img src={reduxLogo} alt="react-logo" className='skills-logo'/>
-                    </div>
-                    <div>
-                        <img src={jsLogo} alt="css-logo" className='skills-logo'/>
-                    </div>
-                    <div>
-                        <img src={htmlLogo} alt="css-logo" className='skills-logo'/>
-                    </div>
-                    <div>
-                        <img src={cssLogo} alt="css-logo" className='skills-logo'/>
-                    </div>
+                    {skillLogos.map((logo) =>
+                        <div key={logo}>
+                            <img src={logo} alt="react-logo" className='skills-logo'/>
+                        </div>
+                    )}
+                </div>
+                <div className='skills-logos'>
+                    {toolsLogos.map((logo) =>
+                        <div key={logo}>
+                            <img src={logo} alt="react-logo" className='skills-logo'/>
+                        </div>
+                    )}
                 </div>
             </div>
             <div className='scroll-container'>
