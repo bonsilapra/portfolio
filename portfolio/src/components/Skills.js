@@ -3,7 +3,7 @@ import './Commons.css';
 import './Skills.css';
 import reactLogo from '../images/logos/reactLogo.png'
 import reduxLogo from '../images/logos/reduxLogo.png'
-import jsLogo from '../images/logos/jsLogo.png'
+import jsLogo from '../images/logos/jsLogo2.png'
 import htmlLogo from '../images/logos/htmlLogo.png'
 import cssLogo from '../images/logos/cssLogo.png'
 import githubLogo from '../images/logos/githubLogo.png'
