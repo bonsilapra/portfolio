@@ -16,7 +16,7 @@ import autocadLogo from '../images/logos/autocadLogo.png'
 
 function Skills() {
 
-    const skillLogos = [{logo:reactLogo, name:"React"}, {logo:reduxLogo, name:"Redux"}, {logo:jsLogo, name:"JavaScript"}, {logo:htmlLogo, name:"HTML"}, {logo:cssLogo, name:"CSS"}]
+    const skillLogos = [{logo:reactLogo, name:"React"}, {logo:reduxLogo, name:"React Redux"}, {logo:jsLogo, name:"JavaScript"}, {logo:htmlLogo, name:"HTML"}, {logo:cssLogo, name:"CSS"}]
     const toolsLogos = [{logo:githubLogo, name:"GitHub"}, {logo:vscLogo, name:"Visual Studio Code"}, {logo:trelloLogo, name:"Trello"}, {logo:autocadLogo, name:"AutoCad"}]
 
     return (

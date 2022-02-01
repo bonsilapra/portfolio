@@ -20,8 +20,8 @@ function Projects() {
             </div>
             <div className='projects-page-content'>
                 <Project 
-                    appName='Mountains'
-                    appDescription='App about mountain trips'
+                    appName='Korona Gór Polski i inne góskie wycieczki'
+                    appDescription='This website is dedicated to mountain trips. It contains descriptions, routes and photos of my trips in the Polish mountains. You can also find there descriptions of mountain ranges  and interesting attractions in the regions that I have visited so far.'
                     appIcons={["React", "JavaScript", "HTML", "CSS"]}  
                     img={kgp} 
                     linkLive='http://joanna-falkowska.pl/trips/'
@@ -29,7 +29,7 @@ function Projects() {
                 />
                 <Project 
                     appName='Yourshelfy'
-                    appDescription='App to keep order'
+                    appDescription='An app to keep order. I decided to create this application to keep up-to-date information on the amount of food products in the apartment and the basement. It helps me prevent food waste, but it can also be used for any other purposes. While creating this application, I learned how to use React Redux.'
                     appIcons={["React", "Redux", "JavaScript", "HTML", "CSS"]} 
                     img={yourshelfy} 
                     linkLive='http://joanna-falkowska.pl/yourshelfy/'
