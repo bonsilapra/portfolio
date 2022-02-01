@@ -31,7 +31,7 @@ function Project({appName, appDescription,appIcons, img, linkLive, linkGithub}) 
                 </div>
             </div>
             <div className='project-img-container'>
-                <img src={img} alt="todo" className='project-img'/>
+                <img src={img} alt='project-img' className='project-img'/>
                 <div className='project-links'>
                     <div>
                         <a href={linkLive} target='blank'>

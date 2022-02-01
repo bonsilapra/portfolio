@@ -77,15 +77,6 @@
     transition: 0.3s ease-out;
 }
 
-.btn--dark {
-    box-shadow: 0 0 10px var(--medium);
-}
-
-.btn--light {
-    box-shadow: 0 0 10px var(--primary);
-}
-
-
 .btn--previous {
     background-color: var(--primary-light);
     color: var(--primary);
@@ -135,6 +126,18 @@
     transition: 0.1s ease-in;
 }
 
+.btn--red-text {
+    color: #BD4B59;
+    text-shadow: 0 0 10px var(--light);
+    background-color: transparent;
+}
+
+.btn--red-text:hover {
+    color: var(--dark);
+    text-shadow: 0 0 10px var(--light);
+    transition: 0.1s ease-in;
+}
+
 .btn--mobile-menu {
     background-color: var(--primary);
     color: var(--primary-light);
@@ -158,6 +161,16 @@
     border: 3px solid var(--dark);
     text-shadow: 0 0 10px var(--light);  
     cursor: default; 
+}
+
+/* SHADOW */
+
+.btn--dark {
+    box-shadow: 0 0 10px var(--medium);
+}
+
+.btn--light {
+    box-shadow: 0 0 10px var(--primary);
 }
 
 
@@ -199,6 +212,13 @@
     font-size: 25px;
     font-weight: 800;
     margin: 5px;
+}
+
+.btn--large-onlytext {
+    font-size: x-large;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
 }
 
 .btn--large-mobile {

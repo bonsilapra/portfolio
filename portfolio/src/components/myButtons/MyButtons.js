@@ -9,6 +9,7 @@ const STYLES = [
     'btn--previous',
     'btn--start',
     'btn--red',
+    'btn--red-text',
     'btn--mobile-menu',
     'btn--tech'
 ];
@@ -29,6 +30,7 @@ const SIZES = [
     'btn--small', 
     'btn--medium', 
     'btn--large',
+    'btn--large-onlytext',
     'btn--large-mobile'
 ];
 
