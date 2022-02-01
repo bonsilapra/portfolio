@@ -6,16 +6,12 @@ import todo from '../../images/todo.png'
 import portfolio from '../../images/portfolio.png'
 import yourshelfy from '../../images/yourshelfy.png'
 import kgp from '../../images/kgp.png'
-import { MyButton } from '../myButtons/MyButtons.js';
+import ScrollButtons from '../ScrollButtons.js';
+
 
 
 function Projects() {
 
-    const scrollTo = (page) => {
-        document.getElementById(page).scrollIntoView({
-            behavior: 'smooth'
-        })
-    }
 
     return (
         <div className='projects-page-container'>
@@ -56,24 +52,7 @@ function Projects() {
                     linkGithub='https://github.com/bonsilapra/todo-list' 
                 />
             </div>
-            <div className='scroll-container'>
-                <MyButton
-                    buttonStyle='btn--previous'
-                    buttonShadow='btn--light'
-                    buttonShape='btn--round'
-                    onClick={() => scrollTo('aboutMe')}
-                >
-                    <i className="fas fa-chevron-up" style={{fontSize:'25px'}}></i>
-                </MyButton>
-                <MyButton
-                    buttonStyle='btn--next'
-                    buttonShadow='btn--light'
-                    buttonShape='btn--round'
-                    onClick={() => scrollTo('skills')}
-                >
-                    <i className="fas fa-chevron-down" style={{fontSize:'25px'}}></i>
-                </MyButton>
-            </div>
+            <ScrollButtons previous='aboutMe' next='skills' />
         </div>
     )
 }

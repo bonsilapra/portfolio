@@ -1,6 +1,7 @@
 import React from 'react';
 import './Commons.css';
 import './Skills.css';
+import ScrollButtons from './ScrollButtons.js';
 import reactLogo from '../images/logos/reactLogo.png'
 import reduxLogo from '../images/logos/reduxLogo.png'
 import jsLogo from '../images/logos/jsLogo2.png'
@@ -12,16 +13,9 @@ import trelloLogo from '../images/logos/trelloLogo.png'
 import autocadLogo from '../images/logos/autocadLogo.png'
 
 
-import { MyButton } from './myButtons/MyButtons.js';
-
 
 function Skills() {
 
-    const scrollTo = (page) => {
-        document.getElementById(page).scrollIntoView({
-            behavior: 'smooth'
-        })
-    }
     const skillLogos = [{logo:reactLogo, name:"React"}, {logo:reduxLogo, name:"Redux"}, {logo:jsLogo, name:"JavaScript"}, {logo:htmlLogo, name:"HTML"}, {logo:cssLogo, name:"CSS"}]
     const toolsLogos = [{logo:githubLogo, name:"GitHub"}, {logo:vscLogo, name:"Visual Studio Code"}, {logo:trelloLogo, name:"Trello"}, {logo:autocadLogo, name:"AutoCad"}]
 
@@ -58,24 +52,7 @@ function Skills() {
                     </div>
                 </div>
             </div>
-            <div className='scroll-container'>
-                <MyButton
-                    buttonStyle='btn--previous'
-                    buttonShadow='btn--dark'
-                    buttonShape='btn--round'
-                    onClick={() => scrollTo('projects')}
-                >
-                    <i className="fas fa-chevron-up" style={{fontSize:'25px'}}></i>
-                </MyButton>
-                <MyButton
-                    buttonStyle='btn--next'
-                    buttonShadow='btn--dark'
-                    buttonShape='btn--round'
-                    onClick={() => scrollTo('hobbies')}
-                >
-                    <i className="fas fa-chevron-down" style={{fontSize:'25px'}}></i>
-                </MyButton>
-            </div>
+            <ScrollButtons previous='projects' next='hobbies' />
         </div>
     )
 }
