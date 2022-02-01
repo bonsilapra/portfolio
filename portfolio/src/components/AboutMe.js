@@ -27,7 +27,7 @@ function AboutMe() {
                         <p>Having completed my studies in Civil Engineering at the Poznań University of Technology and after working in my profession for several years, I decided to change the industry. </p>
                         <p>I have been learning programming since October 2021. At first, I learned HTML, CSS and JavaScript from tutorials at 
                             <a href='https://www.w3schools.com/' target='blank'> W3Schools</a>.
-                            Then my brother Kuba taught me the basics of using React and Redux. He also created back-end for my first two apps. My current skills are listed in the&nbsp;
+                            Then my brother Kuba taught me the basics of using React and Redux. He also created back-end for my first two apps. My skills are listed in the&nbsp;
                             <MyButton
                                 buttonStyle='btn--red-text'
                                 buttonShape='btn--square'
@@ -46,6 +46,34 @@ function AboutMe() {
                                 onClick={() => scrollTo('projects')}
                             >
                                 PROJECTS&nbsp;
+                            </ MyButton>
+                            section.</p>
+                        <p>If you want to know more about me, feel free to&nbsp;
+                            <MyButton
+                                buttonStyle='btn--red-text'
+                                buttonShape='btn--square'
+                                buttonSize='btn--large-onlytext'
+                                onClick={() => scrollTo('contact')}
+                            >
+                                CONTACT&nbsp;
+                            </ MyButton>
+                            me and browse the&nbsp; 
+                            <MyButton
+                                buttonStyle='btn--red-text'
+                                buttonShape='btn--square'
+                                buttonSize='btn--large-onlytext'
+                                onClick={() => scrollTo('hobbies')}
+                            >
+                                HOBBIES&nbsp;
+                            </ MyButton>
+                                and&nbsp;
+                            <MyButton
+                                buttonStyle='btn--red-text'
+                                buttonShape='btn--square'
+                                buttonSize='btn--large-onlytext'
+                                onClick={() => scrollTo('dogs')}
+                            >
+                                DOGS&nbsp;
                             </ MyButton>
                             section.</p>
                     </div>

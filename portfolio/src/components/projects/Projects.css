@@ -47,6 +47,7 @@
         .project-text h2 {
             padding-bottom: 30px;
             text-shadow: 0 0 10px var(--light);  
+            text-align: center;
         }
 
         .project-icons {
