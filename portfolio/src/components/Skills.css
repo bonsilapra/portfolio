@@ -17,19 +17,72 @@
     color: var(--dark);
 }
 
+.skills-text {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    /* padding: 10px; */
+}
+
+.skills-text h2 {
+    padding-bottom: 30px;
+    text-shadow: 0 0 10px var(--light);  
+}
+
 .skills-logos {
     display: flex;
     width: 95vw;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .skills-logo {
+    height: calc(10vw + 5vh);
+    min-height: 150px;
+    margin: 15px;
     display: flex;
-    width: 10vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-logo h4 {
+    margin-top: 15px;
+}
+
+.skills-logo-img-container {
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.skills-logo-img {
+    display: flex;
+    height: calc(8vw + 5vh);
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 470px) {
+
+
+    .skills-logo {
+        height: 30vw;
+        padding: 20px;
+    }
+
+    .skills-logo-img {
+        height: 25vw;
+    }
+
 }
 
 

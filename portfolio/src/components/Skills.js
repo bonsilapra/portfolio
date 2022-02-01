@@ -22,8 +22,8 @@ function Skills() {
             behavior: 'smooth'
         })
     }
-    const skillLogos = [reactLogo, reduxLogo, jsLogo, htmlLogo, cssLogo]
-    const toolsLogos = [githubLogo, vscLogo, trelloLogo, autocadLogo]
+    const skillLogos = [{logo:reactLogo, name:"React"}, {logo:reduxLogo, name:"Redux"}, {logo:jsLogo, name:"JavaScript"}, {logo:htmlLogo, name:"HTML"}, {logo:cssLogo, name:"CSS"}]
+    const toolsLogos = [{logo:githubLogo, name:"GitHub"}, {logo:vscLogo, name:"Visual Studio Code"}, {logo:trelloLogo, name:"Trello"}, {logo:autocadLogo, name:"AutoCad"}]
 
     return (
         <div className='skills-page-container'>
@@ -31,19 +31,31 @@ function Skills() {
                 <h1>Skills</h1>
             </div>
             <div className='skills-page-content'>
-                <div className='skills-logos'>
-                    {skillLogos.map((logo) =>
-                        <div key={logo}>
-                            <img src={logo} alt="react-logo" className='skills-logo'/>
-                        </div>
-                    )}
+                <div className='skills-text'>
+                    <h2>Main skills:</h2>
+                    <div className='skills-logos'>
+                        {skillLogos.map((logo) =>
+                            <div key={logo.name} className='skills-logo'>
+                                <div className='skills-logo-img-container'>
+                                    <img src={logo.logo} alt="react-logo" className='skills-logo-img'/>
+                                </div>
+                                <h4>{logo.name}</h4>
+                            </div>
+                        )}
+                    </div>
                 </div>
-                <div className='skills-logos'>
-                    {toolsLogos.map((logo) =>
-                        <div key={logo}>
-                            <img src={logo} alt="react-logo" className='skills-logo'/>
-                        </div>
-                    )}
+                <div className='skills-text'>
+                    <h2>Tools:</h2>
+                    <div className='skills-logos'>
+                        {toolsLogos.map((logo) =>
+                            <div key={logo.name} className='skills-logo'>
+                                <div className='skills-logo-img-container'>
+                                    <img src={logo.logo} alt="react-logo" className='skills-logo-img'/>
+                                </div>
+                                <h4>{logo.name}</h4>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
             <div className='scroll-container'>

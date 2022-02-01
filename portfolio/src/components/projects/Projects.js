@@ -36,7 +36,7 @@ function Projects() {
                     appDescription='App to keep order'
                     appIcons={["React", "Redux", "JavaScript", "HTML", "CSS"]} 
                     img={yourshelfy} 
-                    linkLive=''
+                    linkLive='http://joanna-falkowska.pl/yourshelfy/'
                     linkGithub='https://github.com/bonsilapra/yourshelfy' 
                 />
                 <Project 
@@ -52,7 +52,7 @@ function Projects() {
                     appDescription='This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js'
                     appIcons={["React", "JavaScript", "HTML", "CSS"]}  
                     img={todo} 
-                    linkLive=''
+                    linkLive='http://joanna-falkowska.pl/todo-list/'
                     linkGithub='https://github.com/bonsilapra/todo-list' 
                 />
             </div>
