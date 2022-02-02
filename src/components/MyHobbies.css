@@ -13,6 +13,48 @@
     width: 95vw;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: var(--dark);
+    font-size: x-large;
+}
+
+.hobbies-img-container {
+    border: 5px solid var(--primary);
+    margin: 10px;
+}
+
+.hobbies-text-container {
+    width: 40vw;
+    margin-left: 30px;
+    text-align: justify;
+}
+
+.hobbies-text-container p {
+    padding-bottom: 10px;
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .hobbies-page-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hobbies-text-container {
+        width: 85vw;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .hobbies-page-content {
+        font-size: large;
+    }
+
 }
