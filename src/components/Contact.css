@@ -41,6 +41,11 @@
     padding-bottom: 50px;
 }
 
+.contact-links h3 {
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
 .contact-links a { 
     padding-right: 20px;
     color: var(--primary);

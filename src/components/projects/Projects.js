@@ -12,6 +12,40 @@ import ScrollButtons from '../ScrollButtons.js';
 
 function Projects() {
 
+    const projects = [
+        {
+            name: 'Korona Gór Polski i inne góskie wycieczki', 
+            description: 'This website is dedicated to mountain trips. It contains descriptions, routes and photos of my trips in the Polish mountains. You can also find there descriptions of mountain ranges  and interesting attractions in the regions that I have visited so far.',
+            icons: ["React", "JavaScript", "HTML", "CSS"],
+            image: kgp,
+            linkLive: 'http://joanna-falkowska.pl/mountains/',
+            linkGithub: 'https://github.com/bonsilapra/mountains'
+        },
+        {
+            name: 'Yourshelfy', 
+            description: 'An app to keep order. I decided to create this application to keep up-to-date information on the amount of food products in the apartment and the basement. It helps me prevent food waste, but it can also be used for any other purposes. While creating this application, I learned how to use React Redux.',
+            icons: ["React", "Redux", "JavaScript", "HTML", "CSS"],
+            image: yourshelfy,
+            linkLive: 'http://joanna-falkowska.pl/yourshelfy/',
+            linkGithub: 'https://github.com/bonsilapra/yourshelfy'
+        },
+        {
+            name: 'Portfolio', 
+            description: 'It is my personal website. Here you can find my portfolio and information about me. While creating this website, I mainly practiced using CSS.',
+            icons: ["React", "JavaScript", "HTML", "CSS"],
+            image: portfolio,
+            linkLive: 'http://joanna-falkowska.pl/',
+            linkGithub: 'https://github.com/bonsilapra/portfolio'
+        },
+        {
+            name: 'Todo App', 
+            description: 'This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js',
+            icons: ["React", "JavaScript", "HTML", "CSS"],
+            image: todo,
+            linkLive: 'http://joanna-falkowska.pl/todo-list/',
+            linkGithub: 'https://github.com/bonsilapra/todo-list'
+        },
+    ]
 
     return (
         <div className='projects-page-container'>
@@ -19,38 +53,17 @@ function Projects() {
                 <h1>Projects</h1>
             </div>
             <div className='projects-page-content'>
-                <Project 
-                    appName='Korona Gór Polski i inne góskie wycieczki'
-                    appDescription='This website is dedicated to mountain trips. It contains descriptions, routes and photos of my trips in the Polish mountains. You can also find there descriptions of mountain ranges  and interesting attractions in the regions that I have visited so far.'
-                    appIcons={["React", "JavaScript", "HTML", "CSS"]}  
-                    img={kgp} 
-                    linkLive='http://joanna-falkowska.pl/trips/'
-                    linkGithub='https://github.com/bonsilapra/mountains' 
-                />
-                <Project 
-                    appName='Yourshelfy'
-                    appDescription='An app to keep order. I decided to create this application to keep up-to-date information on the amount of food products in the apartment and the basement. It helps me prevent food waste, but it can also be used for any other purposes. While creating this application, I learned how to use React Redux.'
-                    appIcons={["React", "Redux", "JavaScript", "HTML", "CSS"]} 
-                    img={yourshelfy} 
-                    linkLive='http://joanna-falkowska.pl/yourshelfy/'
-                    linkGithub='https://github.com/bonsilapra/yourshelfy' 
-                />
-                <Project 
-                    appName='Portfolio'
-                    appDescription='It is my personal website. Here you can find my portfolio and information about me. While creating this website, I mainly practiced using CSS.'
-                    appIcons={["React", "JavaScript", "HTML", "CSS"]}  
-                    img={portfolio} 
-                    linkLive=''
-                    linkGithub='https://github.com/bonsilapra/portfolio' 
-                />
-                <Project 
-                    appName='Todo App'
-                    appDescription='This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js'
-                    appIcons={["React", "JavaScript", "HTML", "CSS"]}  
-                    img={todo} 
-                    linkLive='http://joanna-falkowska.pl/todo-list/'
-                    linkGithub='https://github.com/bonsilapra/todo-list' 
-                />
+                {projects.map((proj) => 
+                    <Project 
+                        key={proj.name}
+                        appName={proj.name}
+                        appDescription={proj.description}
+                        appIcons={proj.icons}
+                        img={proj.image}
+                        linkLive={proj.linkLive}
+                        linkGithub={proj.linkGithub}
+                    />
+                )}
             </div>
             <ScrollButtons previous='aboutMe' next='skills' />
         </div>

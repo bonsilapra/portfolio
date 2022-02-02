@@ -13,6 +13,33 @@ function Footer() {
         });
     };
 
+    const socialLinks = [
+        {
+            title: 'Email',
+            target: '',
+            link: 'mailto:joanna.falkowska.dev@gmail.com',
+            icon: 'far fa-envelope'
+        },
+        {
+            title: 'GitHub',
+            target: 'blank',
+            link: 'https://github.com/bonsilapra',
+            icon: 'fab fa-github'
+        },
+        {
+            title: 'LinkedIn',
+            target: 'blank',
+            link: 'https://www.linkedin.com/in/joanna-falkowska-8a30b3150/',
+            icon: 'fab fa-linkedin'
+        },
+        {
+            title: 'Instagram',
+            target: 'blank',
+            link: 'https://www.instagram.com/bonsilapra/',
+            icon: 'fab fa-instagram'
+        },
+    ]
+
     return (
         <div className='footer'>
             <div className='button-container'>
@@ -27,37 +54,17 @@ function Footer() {
             </div>
             <div className='footer-container'>
                 <div className='footer-link-wrapper'>
-                    <a href="mailto:joanna.falkowska.dev@gmail.com"
-                        aria-label='Email'
-                        className='social-logo'
-                        title="Email"
-                    >
-                        <i className='far fa-envelope' />
-                    </a>
-                    <a href="https://github.com/bonsilapra"
-                        target='blank'
-                        aria-label='GitHub'
-                        className='social-logo'
-                        title="GitHub"
-                    >
-                        <i className='fab fa-github' />
-                    </a>
-                    <a href="https://www.linkedin.com/in/joanna-falkowska-8a30b3150/"
-                        target='blank'
-                        aria-label='LinkedIn'
-                        className='social-logo'
-                        title="LinkedIn"
-                    >
-                        <i className='fab fa-linkedin' />
-                    </a>
-                    <a href="https://www.instagram.com/bonsilapra/"
-                        target='blank'
-                        aria-label='Instagram'
-                        className='social-logo'
-                        title="Instagram"
-                    >
-                        <i className='fab fa-instagram' />
-                    </a>
+                    {socialLinks.map((link) =>
+                        <a 
+                            href={link.link}
+                            target={link.target}
+                            className='social-logo'
+                            title={link.title}
+                            key={link.title}
+                        >
+                            <i className={link.icon} />
+                        </a>
+                    )}
                 </div>
                 <div className='footer-small'>
                     <small className='website-rights'>Copyright© {new Date().getFullYear()} - All Rigths reserved</small>
