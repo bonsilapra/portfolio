@@ -2,7 +2,7 @@
 
 .contact-page-container {
     background: linear-gradient(to bottom, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
-    height: calc(100vh - 130px);
+    min-height: calc(100vh - 130px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,9 +10,193 @@
 
 .contact-page-content {
     display: flex;
-    width: 95vw;
+    width: 90vw;
+    max-width: 1200px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: var(--dark);
+}
+
+.contact-links-container {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    padding-right: 20px;
+    font-size: x-large;
+}
+
+.contact-links-container h2 {
+    color: var(--dark);
+    padding-bottom: 30px;
+    text-shadow: 0 0 10px var(--light);  
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.contact-links a { 
+    padding-right: 20px;
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--light);  
+}
+
+.contact-links a:hover { 
     color: var(--dark);
+    text-shadow: 0 0 10px var(--light);  
+    transform: scale(1.05);
+    transition: 0.1s ease-in;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45vw;
+    padding-left: 20px;
+    font-size: x-large;
+}
+
+.form-container h2 {
+    color: var(--dark);
+    padding-bottom: 30px;
+    text-shadow: 0 0 10px var(--light);  
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+form input,
+form button,
+form textarea {
+    padding: 7px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: none;
+    background: #F2F2F2;
+    border-radius: 10px;
+}
+
+form input,
+form textarea {
+    background-color: var(--light);
+    width: 95%;
+}
+
+form label {
+    font-size: larger;
+    font-weight: 800;
+    padding-bottom: 10px;
+    color: var(--dark);
+}
+
+form button {
+    background-color: var(--primary);
+    color: var(--primary-light);
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+    align-self: center;
+    padding: 15px;
+}
+
+form button:hover {
+    background-color: var(--primary);
+    color: var(--dark);
+    border: 3px solid var(--primary);
+    text-shadow: 0 0 10px var(--light);
+    transform: scale(1.05);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+.alert-shown {
+    position: fixed;
+    top: 50px;
+    padding: 10px;
+    color: var(--primary);
+    background-color: var(--primary-light);
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary);
+    opacity: 1;
+}
+
+.alert-hidden {
+    position: fixed;
+    top: 20px;
+    padding: 10px;
+    color: var(--primary);
+    background-color: var(--primary-light);
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary);
+    opacity: 0;
+    transition: opacity 1.0s linear 0.2s;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .contact-page-content {
+        display: flex;
+        width: 95vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .contact-links-container {
+        width: 90vw;
+        padding-right: 0;
+    }
+
+    .form-container {
+        width: 90vw;
+        padding-left: 0;
+    }
+
+    .contact-links h3 {
+        overflow-wrap: anywhere;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .contact-links-container {
+        font-size: large;
+    }
+
+    .form-container {
+        font-size: large;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .contact-links a {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+
+    form label {
+        font-size: large;
+    }
+
 }

@@ -10,6 +10,7 @@ const STYLES = [
     'btn--start',
     'btn--red',
     'btn--red-text',
+    'btn--primary-text',
     'btn--mobile-menu',
     'btn--tech'
 ];

@@ -138,6 +138,18 @@
     transition: 0.1s ease-in;
 }
 
+.btn--primary-text {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--light);
+    background-color: transparent;
+}
+
+.btn--primary-text:hover {
+    color: var(--dark);
+    text-shadow: 0 0 10px var(--light);
+    transition: 0.1s ease-in;
+}
+
 .btn--mobile-menu {
     background-color: var(--primary);
     color: var(--primary-light);

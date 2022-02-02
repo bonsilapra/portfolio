@@ -29,7 +29,7 @@ function AboutMe() {
                             <a href='https://www.w3schools.com/' target='blank'> W3Schools</a>.
                             Then my brother Kuba taught me the basics of using React and Redux. He also created back-end for my first two apps. My skills are listed in the&nbsp;
                             <MyButton
-                                buttonStyle='btn--red-text'
+                                buttonStyle='btn--primary-text'
                                 buttonShape='btn--square'
                                 buttonSize='btn--large-onlytext'
                                 onClick={() => scrollTo('skills')}
@@ -40,7 +40,7 @@ function AboutMe() {
                         </p>
                         <p>Currently, I learn through practice by creating websites for my own needs. You can find more about them in&nbsp; 
                             <MyButton
-                                buttonStyle='btn--red-text'
+                                buttonStyle='btn--primary-text'
                                 buttonShape='btn--square'
                                 buttonSize='btn--large-onlytext'
                                 onClick={() => scrollTo('projects')}
@@ -59,7 +59,7 @@ function AboutMe() {
                             </ MyButton>
                             me and browse the&nbsp; 
                             <MyButton
-                                buttonStyle='btn--red-text'
+                                buttonStyle='btn--primary-text'
                                 buttonShape='btn--square'
                                 buttonSize='btn--large-onlytext'
                                 onClick={() => scrollTo('hobbies')}
@@ -68,7 +68,7 @@ function AboutMe() {
                             </ MyButton>
                                 and&nbsp;
                             <MyButton
-                                buttonStyle='btn--red-text'
+                                buttonStyle='btn--primary-text'
                                 buttonShape='btn--square'
                                 buttonSize='btn--large-onlytext'
                                 onClick={() => scrollTo('dogs')}

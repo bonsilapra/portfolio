@@ -20,12 +20,11 @@
 
 .about-text-container {
     display: flex;
-    /* width: 50vw; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: x-large;
-    padding: 50px;
+    padding-right: 50px;
 }
 
 .about-text {
@@ -70,6 +69,17 @@
 }
 
 
+@media screen and (max-width: 1200px) {
+
+    .about-text {
+        width: 50vw;
+    }
+
+    .about-img {
+        width: 40vw;
+    }
+}
+
 @media screen and (max-width: 960px) {
 
     .about-page-content {
@@ -94,6 +104,18 @@
 
     .profile-img {
         width: 85vw;
+    }
+
+    .about-text-container {
+        padding-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .about-text {
+        font-size: large;
     }
 
 }

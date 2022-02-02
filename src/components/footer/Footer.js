@@ -27,7 +27,7 @@ function Footer() {
             </div>
             <div className='footer-container'>
                 <div className='footer-link-wrapper'>
-                    <a href="mailto:joanna.falkowska93@gmail.com"
+                    <a href="mailto:joanna.falkowska.dev@gmail.com"
                         aria-label='Email'
                         className='social-logo'
                         title="Email"
