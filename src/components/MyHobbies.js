@@ -36,7 +36,7 @@ function MyHobbies() {
                     <p>For a vacation or a long weekend, I choose a trip to the mountains. This is my favorite activity, so I try to go as often as possible, regardless of the season. My best-loved destination are Tatra Mountains, but my goal is to visit all mountain ranges in Poland.</p>
                     <h2>Roller-skating</h2>
                     <p>When the weather is nice, I like to go roller-skating or cycling. You can often meet me on Wartostrada :&#41; Whenever there is an opportunity, I try to participate in various events related to roller skating, e.g. Night Skating in Poznań. </p>
-                    <h2>Handciraft</h2>
+                    <h2>Handicraft</h2>
                     <p>I am a very creative person, so I need to create. In my spare time, I really like to crochet amigurumi. I also love to knit or crochet shawls that later become gifts for my family and friends. I am currently learning to use a sewing machine to be able to sew clothes according to my own design in the future.</p>
                 </div>
             </div>

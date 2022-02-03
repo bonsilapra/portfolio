@@ -15,7 +15,7 @@ function Projects() {
     const projects = [
         {
             name: 'Korona Gór Polski i inne góskie wycieczki', 
-            description: 'This website is dedicated to mountain trips. It contains descriptions, routes and photos of my trips in the Polish mountains. You can also find there descriptions of mountain ranges  and interesting attractions in the regions that I have visited so far.',
+            description: 'This website is dedicated to mountain trips. It contains descriptions, routes and photos of my trips in Polish mountains. You can also find there descriptions of mountain ranges  and interesting attractions in the regions that I have visited so far.',
             icons: ["React", "JavaScript", "HTML", "CSS"],
             image: kgp,
             linkLive: 'http://joanna-falkowska.pl/mountains/',
