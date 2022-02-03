@@ -39,6 +39,9 @@
 
 @media screen and (max-width: 960px) {
 
+    .start-page-content h1 {
+        padding-top: 10vh;
+    }
 
     .start-page-buttons {
         display: flex;
