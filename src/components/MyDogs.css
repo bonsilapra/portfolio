@@ -33,7 +33,7 @@
     margin: 10px;
 }
 
-button {
+.dogs-button {
     background-color: transparent;
     padding: 0;
     margin: 0;
@@ -43,7 +43,7 @@ button {
     z-index: 0;
 }
 
-button:hover {
+.dogs-button:hover {
     transform: scale(0.95);
     transition: 0.3s ease;
 }

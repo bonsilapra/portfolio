@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import './Navigation.css';
 import { MyButton } from './../myButtons/MyButtons.js';
+import { debounce } from './Helper.js';
+
 
 
 function Navigation() {
 
     const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
+    const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false);
 
     const scrollTo = (page) => {
@@ -15,8 +17,30 @@ function Navigation() {
         })
     }
 
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+
+    const handleScroll = debounce(() => {
+        const currentScrollPos = window.pageYOffset;
+        if (prevScrollPos - currentScrollPos > 600) {
+            setVisible(false)
+            if (window.pageYOffset<80) {
+                setVisible(true)
+            }
+        } else {
+            setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 0) || currentScrollPos < 10);
+        }
+        setPrevScrollPos(currentScrollPos);
+    }, 100);
+    
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos, visible, handleScroll]);
+
+
     return (
-        <div className='navigation'>
+        <div className='navigation' style={{ top: visible ? '0' : '-100px' }}>
             <div className='navigation-container'>
                 <a href="https://github.com/bonsilapra"
                     target='blank'

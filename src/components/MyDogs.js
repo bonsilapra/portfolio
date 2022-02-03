@@ -41,11 +41,11 @@ function MyDogs() {
                     <h1>{barkLuna}</h1> 
                 </div>
                 <div className='dogs-img-container'>
-                    <button
+                    <button className='dogs-button'
                         onClick={()=> {setRico('Hau!'); handleShowBark() }}>
                         <img src={rico} alt='Rico' className='dogs-img' /> 
                     </button>
-                    <button
+                    <button className='dogs-button'
                         onClick={()=> {setLuna('Woof!'); handleShowBark() }}>
                         <img src={luna} alt='Luna' className='dogs-img' /> 
                     </button>

@@ -1,8 +1,8 @@
 /* START */
 
 .start-page-container {
-    background: linear-gradient(to bottom, #0B3B5C 20px, #ABDEFF 80%, #F6F6FF );
-    height: calc(100vh - 100px);
+    background: linear-gradient(to bottom, #0B3B5C 120px, #ABDEFF 80%, #F6F6FF );
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,9 +39,6 @@
 
 @media screen and (max-width: 960px) {
 
-    .start-page-container {
-        height: calc(100vh - 70px);
-    }
 
     .start-page-buttons {
         display: flex;
