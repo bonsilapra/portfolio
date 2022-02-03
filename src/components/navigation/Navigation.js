@@ -38,6 +38,14 @@ function Navigation() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [prevScrollPos, visible, handleScroll]);
 
+    const menuButtons =[
+        {scroll: 'aboutMe', name: 'About me'},
+        {scroll: 'projects', name: 'Projects'},
+        {scroll: 'skills', name: 'Skills'},
+        {scroll: 'hobbies', name: 'My hobbies'},
+        {scroll: 'dogs', name: 'My dogs'},
+        {scroll: 'contact', name: 'Contact'}
+    ]
 
     return (
         <div className='navigation' style={{ top: visible ? '0' : '-100px' }}>
@@ -51,128 +59,32 @@ function Navigation() {
                     <i className='fab fa-github' />
                 </a>
                 <div className= {click ? 'nav-menu active' : 'nav-menu'}>
-                    <div className={click ? 'mobile' : ''}>
-                        <MyButton
-                            buttonStyle='btn--mobile-menu'
-                            buttonShape='btn--mobile'
-                            buttonSize='btn--large-mobile'
-                            onClick={() => {scrollTo('aboutMe'); closeMobileMenu()}}
-                        >
-                            About me
-                        </MyButton>  
-                    </div>  
-                    <div className={click ? 'mobile' : ''}>
-                        <MyButton
-                            buttonStyle='btn--mobile-menu'
-                            buttonShape='btn--mobile'
-                            buttonSize='btn--large-mobile'
-                            onClick={() => {scrollTo('projects'); closeMobileMenu()}}
-                        >
-                            Projects
-                        </MyButton>   
-                    </div>
-                    <div className={click ? 'mobile' : ''}>
-                        <MyButton
-                            buttonStyle='btn--mobile-menu'
-                            buttonShape='btn--mobile'
-                            buttonSize='btn--large-mobile'
-                            onClick={() => {scrollTo('skills'); closeMobileMenu()}}
-                        >
-                            Skills
-                        </MyButton>  
-                    </div>
-                    <div className={click ? 'mobile' : ''}> 
-                        <MyButton
-                            buttonStyle='btn--mobile-menu'
-                            buttonShape='btn--mobile'
-                            buttonSize='btn--large-mobile'
-                            onClick={() => {scrollTo('hobbies'); closeMobileMenu()}}
-                        >
-                            My hobbies
-                        </MyButton>   
-                    </div> 
-                    <div className={click ? 'mobile' : ''}> 
-                        <MyButton
-                            buttonStyle='btn--mobile-menu'
-                            buttonShape='btn--mobile'
-                            buttonSize='btn--large-mobile'
-                            onClick={() => {scrollTo('dogs'); closeMobileMenu()}}
-                        >
-                            My dogs
-                        </MyButton>
-                    </div>
-                    <div className={click ? 'mobile' : ''}>
-                        <MyButton
-                            buttonStyle='btn--mobile-menu'
-                            buttonShape='btn--mobile'
-                            buttonSize='btn--large-mobile'
-                            onClick={() => {scrollTo('contact'); closeMobileMenu()}}
-                        >
-                            Contact
-                        </MyButton>   
-                    </div>        
+                    {menuButtons.map((button) =>
+                        <div className={click ? 'mobile' : ''}>
+                            <MyButton
+                                buttonStyle='btn--mobile-menu'
+                                buttonShape='btn--mobile'
+                                buttonSize='btn--large-mobile'
+                                onClick={() => {scrollTo(button.scroll); closeMobileMenu()}}
+                            >
+                                {button.name}
+                            </MyButton>  
+                        </div>  
+                    )}
                 </div>
                 <div className='navigation-link-wrapper'>
-                    <div>
-                        <MyButton
-                            buttonStyle='btn--primary-rev'
-                            buttonShape='btn--square'
-                            buttonSize='btn--large'
-                            onClick={() => {scrollTo('aboutMe'); closeMobileMenu()}}
-                        >
-                            About me
-                        </MyButton>  
-                    </div>  
-                    <div>
-                        <MyButton
-                            buttonStyle='btn--primary-rev'
-                            buttonShape='btn--square'
-                            buttonSize='btn--large'
-                            onClick={() => {scrollTo('projects'); closeMobileMenu()}}
-                        >
-                            Projects
-                        </MyButton>   
-                    </div>
-                    <div>
-                        <MyButton
-                            buttonStyle='btn--primary-rev'
-                            buttonShape='btn--square'
-                            buttonSize='btn--large'
-                            onClick={() => {scrollTo('skills'); closeMobileMenu()}}
-                        >
-                            Skills
-                        </MyButton>  
-                    </div>
-                    <div> 
-                        <MyButton
-                            buttonStyle='btn--primary-rev'
-                            buttonShape='btn--square'
-                            buttonSize='btn--large'
-                            onClick={() => {scrollTo('hobbies'); closeMobileMenu()}}
-                        >
-                            My hobbies
-                        </MyButton>   
-                    </div> 
-                    <div> 
-                        <MyButton
-                            buttonStyle='btn--primary-rev'
-                            buttonShape='btn--square'
-                            buttonSize='btn--large'
-                            onClick={() => {scrollTo('dogs'); closeMobileMenu()}}
-                        >
-                            My dogs
-                        </MyButton>
-                    </div>
-                    <div>
-                        <MyButton
-                            buttonStyle='btn--primary-rev'
-                            buttonShape='btn--square'
-                            buttonSize='btn--large'
-                            onClick={() => {scrollTo('contact'); closeMobileMenu()}}
-                        >
-                            Contact
-                        </MyButton>   
-                    </div>        
+                    {menuButtons.map((button) =>
+                        <div className={click ? 'mobile' : ''}>
+                            <MyButton
+                                buttonStyle='btn--primary-rev'
+                                buttonShape='btn--square'
+                                buttonSize='btn--large'
+                                onClick={() => {scrollTo(button.scroll)}}
+                            >
+                                {button.name}
+                            </MyButton>  
+                        </div>  
+                    )}
                 </div>
                 <div className='menu-icon'>
                     <MyButton 
