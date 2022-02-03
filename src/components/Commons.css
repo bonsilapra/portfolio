@@ -38,7 +38,7 @@ vh:root {
     justify-content: flex-end;
     position: -webkit-sticky;
     position: sticky;
-    top: 10px;
+    top: calc(100vh - 70px);
     padding-right: 10px;
     height: 0;
     z-index: 10;

@@ -11,8 +11,118 @@
 .dogs-page-content {
     display: flex;
     width: 95vw;
+    min-height: 80vh;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     color: var(--dark);
+}
+
+.dogs-img-container {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dogs-img {
+    border: 5px solid var(--primary);
+    max-width: 25vw;
+    margin: 10px;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 0;
+}
+
+button:hover {
+    transform: scale(0.95);
+    transition: 0.3s ease;
+}
+
+.dogs-text-container {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.dogs-text-container p {
+    padding-bottom: 30px;
+}
+
+.bark-shown {
+    position: fixed;
+    top: 40%;
+    padding: 10px;
+    color: var(--primary);
+    background-color: var(--primary-light);
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary);
+    opacity: 1;
+    z-index: 1;
+}
+
+.bark-hidden {
+    position: fixed;
+    top: 0%;
+    padding: 10px;
+    color: var(--primary);
+    background-color: var(--primary-light);
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary);
+    opacity: 0;
+    transition: all 0.3s linear 0.1s;
+    z-index: 1;
+}
+
+@media screen and (max-width: 960px) {
+
+    .dogs-page-content {
+        display: flex;
+        width: 95vw;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dogs-img-container {
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dogs-img {
+        max-width: 40vw;
+    }
+
+    .dogs-text-container {
+        width: 85vw;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .dogs-text-container {
+        font-size: large;
+    }
+
 }
