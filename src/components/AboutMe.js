@@ -23,7 +23,7 @@ function AboutMe() {
             <div className='about-page-content'>
                 <div className='about-text-container'>
                     <div className='about-text'>
-                        <p>My name is Asia and I really enjoy creating pretty and functional websites :&#41; </p>
+                        <p>My name is Asia and I really enjoy creating pretty and functional websites :&#41; I am looking for my first job as Front-End developer.</p>
                         <p>Having completed my studies in Civil Engineering at the Poznań University of Technology and after working in my profession for couple of years, I decided to change the industry. </p>
                         <p>I have been learning programming since October 2021. At first, I learned HTML, CSS and JavaScript from tutorials at 
                             <a href='https://www.w3schools.com/' target='blank'> W3Schools</a>.
