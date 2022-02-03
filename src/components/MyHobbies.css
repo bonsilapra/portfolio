@@ -29,9 +29,15 @@
     text-align: justify;
 }
 
-.hobbies-text-container p {
-    padding-bottom: 10px;
+.hobbies-text-container h2 {
+    color: var(--dark);
+    padding-bottom: 30px;
+    text-shadow: 0 0 10px var(--light);  
+    text-align: center;
+}
 
+.hobbies-text-container p {
+    padding-bottom: 30px;
 }
 
 @media screen and (max-width: 960px) {

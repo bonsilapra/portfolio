@@ -72,14 +72,14 @@ function Contact() {
             </div>
             <div className='contact-page-content'>
                 <div className='contact-links-container'>
-                    <h2>E-mail</h2>
+                    <h2>E-mail:</h2>
                     <div className='contact-links'>
                         <a href="mailto:joanna.falkowska.dev@gmail.com" title="Email">
                             <i className='far fa-envelope' style={{fontSize:'40px'}} />
                         </a>
                         <h3>joanna.falkowska.dev@gmail.com</h3>
                     </div>
-                    <h2>Links</h2>
+                    <h2>Links:</h2>
                     {links.map((link) => 
                         <div className='contact-links' key={link.name}>
                             <a href={link.link} target='blank'title={link.name}>
