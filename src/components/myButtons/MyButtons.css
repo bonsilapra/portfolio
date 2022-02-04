@@ -61,6 +61,14 @@
     transition: 0.3s ease-out;
 }
 
+.btn--primary-rev-arrow:focus {
+    background-color: var(--primary);
+    color: var(--primary-light);
+    border: 3px solid var(--primary);
+    transition: 0.3s ease-out;
+    transform:  translateY(0);
+}
+
 .btn--next {
     background-color: var(--light);
     color: var(--primary);
@@ -77,6 +85,14 @@
     transition: 0.3s ease-out;
 }
 
+.btn--next:focus {
+    background-color: var(--light);
+    color: var(--primary);
+    border: 3px solid var(--light);
+    transition: 0.3s ease-out;
+    transform:  translateY(0px);
+}
+
 .btn--previous {
     background-color: var(--primary-light);
     color: var(--primary);
@@ -91,6 +107,14 @@
     text-shadow: 0 0 10px var(--light);
     transform:  translateY(-10px);
     transition: 0.3s ease-out;
+}
+
+.btn--previous:focus {
+    background-color: var(--primary-light);
+    color: var(--primary);
+    border: 3px solid var(--primary-light);
+    transition: 0.3s ease-out;
+    transform:  translateY(0px);
 }
 
 .btn--start {

@@ -60,7 +60,7 @@ function Navigation() {
                 </a>
                 <div className= {click ? 'nav-menu active' : 'nav-menu'}>
                     {menuButtons.map((button) =>
-                        <div className={click ? 'mobile' : ''}>
+                        <div key={button.scroll} className={click ? 'mobile' : ''}>
                             <MyButton
                                 buttonStyle='btn--mobile-menu'
                                 buttonShape='btn--mobile'
@@ -74,7 +74,7 @@ function Navigation() {
                 </div>
                 <div className='navigation-link-wrapper'>
                     {menuButtons.map((button) =>
-                        <div className={click ? 'mobile' : ''}>
+                        <div key={button.scroll} className={click ? 'mobile' : ''}>
                             <MyButton
                                 buttonStyle='btn--primary-rev'
                                 buttonShape='btn--square'

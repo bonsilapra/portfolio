@@ -7,27 +7,29 @@ import luna from '../images/photos/luna.jpg';
 
 function MyDogs() {
 
-    const [showingBark, setShowBark] = useState(false);
-    const [barkRico, setRico] = useState('');
-    const [barkLuna, setLuna] = useState('');
+    const [showingBarkRico, setShowBarkRico] = useState(false);
+    const [showingBarkLuna, setShowBarkLuna] = useState(false);
+    let ricoTimeout;
+    let lunaTimeout;
 
-    const handleShowBark = () => {
-        setShowBark(true);
-        if (barkRico.length != 0) {
-            setTimeout(() => {
-                setShowBark(false);
-            }, 500);
-            setTimeout(() => {
-                setRico('')
-            },1000)
-        } else {
-            setTimeout(() => {
-                setShowBark(false);
-            }, 500);
-            setTimeout(() => {
-                setLuna('')
-            },1000)
+    const handleShowBarkRico = () => {
+        if (ricoTimeout) {
+            clearTimeout(ricoTimeout)
         }
+        setShowBarkRico(true);
+        ricoTimeout = setTimeout(() => {
+            setShowBarkRico(false);
+        }, 500);
+    }
+
+    const handleShowBarkLuna = () => {
+        if (lunaTimeout) {
+            clearTimeout(lunaTimeout)
+        }
+        setShowBarkLuna(true);
+        lunaTimeout = setTimeout(() => {
+            setShowBarkLuna(false);
+        }, 500);
     }
 
     return (
@@ -36,17 +38,19 @@ function MyDogs() {
                 <h1>My dogs</h1>
             </div>
             <div className='dogs-page-content'>
-                <div className={ showingBark ? 'bark-shown' : 'bark-hidden'}>
-                    <h1>{barkRico}</h1> 
-                    <h1>{barkLuna}</h1> 
-                </div>
                 <div className='dogs-img-container'>
                     <button className='dogs-button'
-                        onClick={()=> {setRico('Hau!'); handleShowBark() }}>
+                        onClick={handleShowBarkRico}>
+                        <div className={ showingBarkRico ? 'bark-shown' : 'bark-hidden'}>
+                            <h1>Hau!</h1> 
+                        </div>
                         <img src={rico} alt='Rico' className='dogs-img' /> 
                     </button>
                     <button className='dogs-button'
-                        onClick={()=> {setLuna('Woof!'); handleShowBark() }}>
+                        onClick={handleShowBarkLuna}>
+                        <div className={ showingBarkLuna ? 'bark-shown' : 'bark-hidden'}>
+                            <h1>Woof!</h1> 
+                        </div>
                         <img src={luna} alt='Luna' className='dogs-img' /> 
                     </button>
                 </div>

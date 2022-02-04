@@ -64,7 +64,7 @@
 }
 
 .profile-img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: 5px solid var(--primary);
     max-width: 432px;
 }

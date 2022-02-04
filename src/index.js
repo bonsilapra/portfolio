@@ -32,17 +32,17 @@ ReactDOM.render(
     <div id='start'>
       <Start />
     </div>
-      <div className='back-to-top'>
-          <MyButton
-              buttonStyle='btn--primary-rev-arrow'
-              buttonShadow='btn--dark'
-              buttonShape='btn--round'
-              onClick={() => scrollToTop()}
-              title='Back to top'
-          >
-              <i className="fas fa-angle-double-up" style={{fontSize:'25px'}}></i>
-          </MyButton>
-      </div>
+    <div className='back-to-top'>
+      <MyButton
+          buttonStyle='btn--primary-rev-arrow'
+          buttonShadow='btn--dark'
+          buttonShape='btn--round'
+          onClick={() => scrollToTop()}
+          title='Back to top'
+      >
+          <i className="fas fa-angle-double-up" style={{fontSize:'25px'}}></i>
+      </MyButton>
+    </div>
     <div id="aboutMe">
       <AboutMe />
     </div>
