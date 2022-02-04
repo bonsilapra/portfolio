@@ -77,7 +77,7 @@ function Contact() {
                         <a href="mailto:joanna.falkowska.dev@gmail.com" title="Email">
                             <i className='far fa-envelope' style={{fontSize:'40px'}} />
                         </a>
-                        <h3>joanna.falkowska.dev@gmail.com</h3>
+                        <h3>joanna.falkowska.dev@<span style={{whiteSpace: "nowrap"}}>gmail</span><span style={{whiteSpace: "nowrap"}}>.com</span></h3>
                     </div>
                     <h2>Links:</h2>
                     {links.map((link) => 

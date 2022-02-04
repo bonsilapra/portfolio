@@ -39,13 +39,13 @@ function MyDogs() {
             </div>
             <div className='dogs-page-content'>
                 <div className='dogs-img-container'>
-                    <button className='dogs-button'
-                        onClick={handleShowBarkRico}>
-                        <div className={ showingBarkRico ? 'bark-shown' : 'bark-hidden'}>
-                            <h1>Hau!</h1> 
-                        </div>
-                        <img src={rico} alt='Rico' className='dogs-img' /> 
-                    </button>
+                        <button className='dogs-button'
+                            onClick={handleShowBarkRico}>
+                            <img src={rico} alt='Rico' className='dogs-img' /> 
+                            <div className={ showingBarkRico ? 'bark-shown' : 'bark-hidden'}>
+                                <h1>Hau!</h1> 
+                            </div>
+                        </button>
                     <button className='dogs-button'
                         onClick={handleShowBarkLuna}>
                         <div className={ showingBarkLuna ? 'bark-shown' : 'bark-hidden'}>

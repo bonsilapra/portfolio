@@ -41,6 +41,7 @@
     cursor: pointer;
     transition: 0.5s ease;
     z-index: 0;
+    position: relative;
 }
 
 .dogs-button:hover {
@@ -63,7 +64,7 @@
 }
 
 .bark-shown {
-    position: fixed;
+    position: absolute;
     top: 40%;
     left: 40%;
     padding: 10px;
@@ -77,7 +78,7 @@
 }
 
 .bark-hidden {
-    position: fixed;
+    position: absolute;
     top: 0%;
     left: 40%;
     padding: 10px;
