@@ -3,6 +3,7 @@ import '../Commons.css';
 import './Projects.css';
 import Project from './Project';
 import todo from '../../images/todo.png'
+import todopl from '../../images/todopl.png'
 import portfolio from '../../images/portfolio.png'
 import yourshelfy from '../../images/yourshelfy.png'
 import kgp from '../../images/kgp.png'
@@ -44,6 +45,14 @@ function Projects() {
             image: todo,
             linkLive: 'http://joanna-falkowska.pl/todo-list/',
             linkGithub: 'https://github.com/bonsilapra/todo-list'
+        },
+        {
+            name: 'Todo App - polish', 
+            description: "The second version of Todo App. It was created at my mother's request. Now she uses it at work. There are some changes like polish language, color and different buttons functionality.",
+            icons: ["React", "JavaScript", "HTML", "CSS"],
+            image: todopl,
+            linkLive: 'http://joanna-falkowska.pl/todo-pl/',
+            linkGithub: 'https://github.com/bonsilapra/todo-pl'
         },
     ]
 
