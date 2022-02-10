@@ -124,9 +124,31 @@ form button:hover {
     cursor: pointer;
 }
 
+form button:disabled {
+    background-color: var(--primary);
+    color: var(--primary-light);
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+    align-self: center;
+    padding: 15px;
+    opacity: 50%;
+}
+
+form button:disabled:hover {
+    background-color: var(--primary);
+    color: var(--primary-light);
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+    transform: none;
+    text-shadow: none;
+    cursor: default;
+}
+
+
+
 .alert-shown {
     position: fixed;
-    top: 50px;
+    top: 150px;
     padding: 10px;
     color: var(--primary);
     background-color: var(--primary-light);

@@ -50,6 +50,7 @@ function Contact() {
             });
     };
     
+
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
@@ -59,8 +60,6 @@ function Contact() {
         {link: 'https://www.linkedin.com/in/joanna-falkowska-8a30b3150/', name: 'LinkedIn', icon: 'fab fa-linkedin'},
         {link: 'https://www.instagram.com/bonsilapra/', name: 'Instagram', icon: 'fab fa-instagram'},
     ]
-
-
 
     return (
         <div className='contact-page-container'>
@@ -115,6 +114,7 @@ function Contact() {
                         />
                         <button 
                             type='submit'
+                            disabled={toSend.from_name.length == 0 || toSend.from_email.length == 0 || toSend.message.length == 0}
                         >
                             SEND <i className="fas fa-paper-plane"></i>
                         </button>
