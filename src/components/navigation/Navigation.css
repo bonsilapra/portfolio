@@ -22,7 +22,7 @@
     background-color: var(--primary);
     width: 100%;
     height: 80px;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 60px 10px 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 .navigation-link-wrapper {
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    width: 70vw;
     justify-content: space-around;
     align-items: center;
     transition: 0.3s ease-out;

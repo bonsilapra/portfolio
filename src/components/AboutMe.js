@@ -4,7 +4,7 @@ import './AboutMe.css';
 import ScrollButtons from './ScrollButtons.js';
 import profile from '../images/photos/profile.png'
 import { MyButton } from './myButtons/MyButtons';
-
+import CV from '../pdf/CV.pdf'
 
 
 function AboutMe() {
@@ -24,7 +24,18 @@ function AboutMe() {
                 <div className='about-text-container'>
                     <div className='about-text'>
                         <p>My name is Asia and I really enjoy creating pretty and functional websites :&#41; I am looking for my first job as Front-End developer.</p>
-                        <p>Having completed my studies in Civil Engineering at the Poznań University of Technology and after working in my profession for couple of years, I decided to change the industry. </p>
+                        <p>Having completed my studies in Civil Engineering at the Poznań University of Technology and after working in my profession for couple of years, I decided to change the industry. If you want to learn more details about my work experience check out my&nbsp;
+                            <a href={CV} target='blank'>
+                                <MyButton
+                                    buttonStyle='btn--primary-text'
+                                    buttonShape='btn--square'
+                                    buttonSize='btn--large-onlytext'
+                                >
+                                    CV
+                                </ MyButton>
+                            </a>
+                            .
+                        </p>
                         <p>I have been learning programming since October 2021. At first, I learned HTML, CSS and JavaScript from tutorials at 
                             <a href='https://www.w3schools.com/' target='blank'> W3Schools</a>.
                             Then my brother Kuba (who graduated from Computer Science) taught me the basics of using React and Redux. He also created back-end for my first two apps. My skills are listed in the&nbsp;

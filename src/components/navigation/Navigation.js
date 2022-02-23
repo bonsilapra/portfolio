@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './Navigation.css';
 import { MyButton } from './../myButtons/MyButtons.js';
 import { debounce } from './Helper.js';
+import CV from '../../pdf/CV.pdf'
 
 
 
@@ -50,13 +51,13 @@ function Navigation() {
     return (
         <div className='navigation' style={{ top: visible ? '0' : '-100px' }}>
             <div className='navigation-container'>
-                <a href="https://github.com/bonsilapra"
+                <a href={CV}
                     target='blank'
-                    aria-label='GitHub'
+                    aria-label='CV'
                     className='social-logo'
-                    title="GitHub"
+                    title="CV"
                 >
-                    <i className='fab fa-github' />
+                    <i className='far fa-address-card' />
                 </a>
                 <div className= {click ? 'nav-menu active' : 'nav-menu'}>
                     {menuButtons.map((button) =>

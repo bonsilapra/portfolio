@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import { MyButton } from './../myButtons/MyButtons.js';
+import CV from '../../pdf/CV.pdf'
+
 
 
 
@@ -19,6 +21,12 @@ function Footer() {
             target: '',
             link: 'mailto:joanna.falkowska.dev@gmail.com',
             icon: 'far fa-envelope'
+        },
+        {
+            title: 'CV',
+            target: 'blank',
+            link: CV,
+            icon: 'far fa-address-card'
         },
         {
             title: 'GitHub',

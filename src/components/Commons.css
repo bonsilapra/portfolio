@@ -39,7 +39,7 @@ vh:root {
     align-items: flex-start;
     position: -webkit-sticky;
     position: sticky;
-    top: calc(100vh - 120px);
+    top: calc(100vh - 80px);
     padding-right: 10px;
     height: 0;
     z-index: 10;

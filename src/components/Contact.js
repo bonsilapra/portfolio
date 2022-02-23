@@ -3,6 +3,7 @@ import './Commons.css';
 import './Contact.css';
 import { MyButton } from './myButtons/MyButtons.js';
 import { send } from 'emailjs-com';
+import CV from '../pdf/CV.pdf'
 
 
 function Contact() {
@@ -56,6 +57,7 @@ function Contact() {
     };
 
     const links = [
+        {link: CV, name: 'CV', icon: 'far fa-address-card'},
         {link: 'https://github.com/bonsilapra', name: 'GitHub', icon: 'fab fa-github'},
         {link: 'https://www.linkedin.com/in/joanna-falkowska-8a30b3150/', name: 'LinkedIn', icon: 'fab fa-linkedin'},
         {link: 'https://www.instagram.com/bonsilapra/', name: 'Instagram', icon: 'fab fa-instagram'},
