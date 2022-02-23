@@ -31,6 +31,14 @@ function Projects() {
             linkGithub: 'https://github.com/bonsilapra/yourshelfy'
         },
         {
+            name: 'Meal ideas', 
+            description: 'This app was created to list and organize meal ideas. It allows you to create a database of different types of meals and sort it according to selected criteria.',
+            icons: ["React", "JavaScript", "HTML", "CSS", "SASS"],
+            image: portfolio,
+            linkLive: 'http://joanna-falkowska.pl/meal-ideas/',
+            linkGithub: 'https://github.com/bonsilapra/meal-ideas'
+        },
+        {
             name: 'Portfolio', 
             description: 'It is my personal website. Here you can find my portfolio and information about me. While creating this website, I mainly practiced using CSS.',
             icons: ["React", "JavaScript", "HTML", "CSS"],

@@ -7,6 +7,7 @@ import reduxLogo from '../images/logos/reduxLogo.png'
 import jsLogo from '../images/logos/jsLogo2.png'
 import htmlLogo from '../images/logos/htmlLogo.png'
 import cssLogo from '../images/logos/cssLogo.png'
+import sassLogo from '../images/logos/sassLogo.png'
 import githubLogo from '../images/logos/githubLogo.png'
 import vscLogo from '../images/logos/vscLogo.png'
 import trelloLogo from '../images/logos/trelloLogo.png'
@@ -16,7 +17,7 @@ import autocadLogo from '../images/logos/autocadLogo.png'
 
 function Skills() {
 
-    const skillLogos = [{logo:reactLogo, name:"React"}, {logo:reduxLogo, name:"React Redux"}, {logo:jsLogo, name:"JavaScript"}, {logo:htmlLogo, name:"HTML"}, {logo:cssLogo, name:"CSS"}]
+    const skillLogos = [{logo:reactLogo, name:"React"}, {logo:reduxLogo, name:"React Redux"}, {logo:jsLogo, name:"JavaScript"}, {logo:htmlLogo, name:"HTML"}, {logo:cssLogo, name:"CSS"}, {logo:sassLogo, name:"SASS"}]
     const toolsLogos = [{logo:githubLogo, name:"GitHub"}, {logo:vscLogo, name:"Visual Studio Code"}, {logo:trelloLogo, name:"Trello"}, {logo:autocadLogo, name:"AutoCad"}]
 
     return (

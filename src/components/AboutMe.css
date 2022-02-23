@@ -60,22 +60,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 40vw;
+    width: 40vw;
 }
 
 .profile-img {
-    /* border-radius: 50%; */
+    border-radius: 50%;
     border: 5px solid var(--primary);
-    max-width: 432px;
+    width: 35vw;
 }
 
 
-@media screen and (max-width: 1200px) {
-
-    .profile-img {
-        width: 332px;
-    }
-}
 
 @media screen and (max-width: 960px) {
 
@@ -100,7 +94,7 @@
     }
 
     .profile-img {
-        width: 85vw;
+        width: 75vw;
     }
 
     .about-text-container {
