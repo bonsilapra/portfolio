@@ -1,7 +1,7 @@
 /* PROJECTS */
 
 .projects-page-container {
-    background: linear-gradient(to bottom, #0B3B5C 15px, #ABDEFF 80%, #F6F6FF );
+    background: linear-gradient(to bottom, #0e4970 15px, #ABDEFF 80%, #F6F6FF );
     min-height: 100vh;
     display: flex;
     flex-direction: column;

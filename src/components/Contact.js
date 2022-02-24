@@ -83,7 +83,7 @@ function Contact() {
                     <h2>Links:</h2>
                     {links.map((link) => 
                         <div className='contact-links' key={link.name}>
-                            <a href={link.link} target='blank'title={link.name}>
+                            <a href={link.link} target='_blank' rel='noreferrer' title={link.name}>
                                 <i className={link.icon} style={{fontSize:'40px'}} />
                             </a>
                             <h3>{link.name}</h3>
@@ -93,30 +93,34 @@ function Contact() {
                 <div className='form-container'>
                     <h2>Write to me:</h2>
                     <form onSubmit={onSubmit}>
-                        <label>Your name:</label>
-                        <input 
-                            type='text' 
-                            name='from_name'
-                            value={toSend.from_name}
-                            onChange={handleChange}
-                        />
-                        <label>Your e-mail:</label>
-                        <input 
-                            type='text' 
-                            name='from_email'
-                            value={toSend.from_email}
-                            onChange={handleChange}
-                        />
-                        <label>Messange:</label>
-                        <textarea 
-                            name='message' 
-                            rows='8'  
-                            value={toSend.message}
-                            onChange={handleChange}
-                        />
+                        <label>Your name:
+                            <input 
+                                type='text' 
+                                name='from_name'
+                                value={toSend.from_name}
+                                onChange={handleChange}
+                            />
+                        </label>
+                        <label>Your e-mail:
+                            <input 
+                                type='text' 
+                                name='from_email'
+                                value={toSend.from_email}
+                                onChange={handleChange}
+                            />
+                        </label>
+                        <label>Messange:
+                            <textarea 
+                                name='message' 
+                                rows='8'  
+                                value={toSend.message}
+                                onChange={handleChange}
+                            />
+                        </label>
                         <button 
                             type='submit'
                             disabled={toSend.from_name.length == 0 || toSend.from_email.length == 0 || toSend.message.length == 0}
+                            title='submit'
                         >
                             SEND <i className="fas fa-paper-plane"></i>
                         </button>
@@ -129,6 +133,7 @@ function Contact() {
                     buttonShadow='btn--light'
                     buttonShape='btn--round'
                     onClick={() => scrollTo('dogs')}
+                    title='previous'
                 >
                     <i className="fas fa-chevron-up" style={{fontSize:'25px'}}></i>
                 </MyButton>

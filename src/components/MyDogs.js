@@ -40,14 +40,18 @@ function MyDogs() {
             <div className='dogs-page-content'>
                 <div className='dogs-img-container'>
                         <button className='dogs-button'
-                            onClick={handleShowBarkRico}>
+                            onClick={handleShowBarkRico}
+                            title='Rico'
+                        >
                             <img src={rico} alt='Rico' className='dogs-img' /> 
                             <div className={ showingBarkRico ? 'bark-shown' : 'bark-hidden'}>
                                 <h1>Hau!</h1> 
                             </div>
                         </button>
                     <button className='dogs-button'
-                        onClick={handleShowBarkLuna}>
+                        onClick={handleShowBarkLuna}
+                        title='Luna'
+                    >
                         <div className={ showingBarkLuna ? 'bark-shown' : 'bark-hidden'}>
                             <h1>Woof!</h1> 
                         </div>

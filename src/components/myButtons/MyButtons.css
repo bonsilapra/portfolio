@@ -1,5 +1,5 @@
 :root {
-    --primary: #0B3B5C;
+    --primary: #0e4970;
     --primary-light: #ABDEFF;
     --dark: #0D222E;
     --medium: #9FABB5;
@@ -136,9 +136,9 @@
 }
 
 .btn--red {
-    background-color: #F2BCB5;
+    background-color: #f5cbc6;
     color: #BD4B59;
-    border: 3px solid #F2BCB5;
+    border: 3px solid #f5cbc6;
     box-shadow: 0 0 10px var(--primary);
 }
 

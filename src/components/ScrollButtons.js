@@ -18,6 +18,7 @@ function ScrollButtons({previous, next}) {
                 buttonShadow='btn--dark'
                 buttonShape='btn--round'
                 onClick={() => scrollTo(previous)}
+                title='previous'
             >
                 <i className="fas fa-chevron-up" style={{fontSize:'25px'}}></i>
             </MyButton>
@@ -26,6 +27,7 @@ function ScrollButtons({previous, next}) {
                 buttonShadow='btn--dark'
                 buttonShape='btn--round'
                 onClick={() => scrollTo(next)}
+                title='next'
             >
                 <i className="fas fa-chevron-down" style={{fontSize:'25px'}}></i>
             </MyButton>

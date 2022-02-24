@@ -52,7 +52,8 @@ function Navigation() {
         <div className='navigation' style={{ top: visible ? '0' : '-100px' }}>
             <div className='navigation-container'>
                 <a href={CV}
-                    target='blank'
+                    target='_blank'
+                    rel='noreferrer'
                     aria-label='CV'
                     className='social-logo'
                     title="CV"
@@ -67,6 +68,7 @@ function Navigation() {
                                 buttonShape='btn--mobile'
                                 buttonSize='btn--large-mobile'
                                 onClick={() => {scrollTo(button.scroll); closeMobileMenu()}}
+                                title={button.name}
                             >
                                 {button.name}
                             </MyButton>  
@@ -81,6 +83,7 @@ function Navigation() {
                                 buttonShape='btn--square'
                                 buttonSize='btn--large'
                                 onClick={() => {scrollTo(button.scroll)}}
+                                title={button.name}
                             >
                                 {button.name}
                             </MyButton>  
@@ -93,6 +96,7 @@ function Navigation() {
                         buttonShape='btn--square'
                         buttonSize='btn--large'
                         onClick={handleClick}
+                        title='mobile-menu'
                         >
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </MyButton>

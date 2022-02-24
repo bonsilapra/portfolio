@@ -1,7 +1,7 @@
 /* START */
 
 .start-page-container {
-    background: linear-gradient(to bottom, #0B3B5C 120px, #ABDEFF 80%, #F6F6FF );
+    background: linear-gradient(to bottom, #0e4970 120px, #ABDEFF 80%, #F6F6FF );
     height: 100vh;
     display: flex;
     flex-direction: column;

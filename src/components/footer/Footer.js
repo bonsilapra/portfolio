@@ -19,30 +19,35 @@ function Footer() {
         {
             title: 'Email',
             target: '',
+            rel:'',
             link: 'mailto:joanna.falkowska.dev@gmail.com',
             icon: 'far fa-envelope'
         },
         {
             title: 'CV',
-            target: 'blank',
+            target: '_blank',
             link: CV,
+            rel:'noreferrer',
             icon: 'far fa-address-card'
         },
         {
             title: 'GitHub',
-            target: 'blank',
+            target: '_blank',
+            rel:'noreferrer',
             link: 'https://github.com/bonsilapra',
             icon: 'fab fa-github'
         },
         {
             title: 'LinkedIn',
-            target: 'blank',
+            target: '_blank',
+            rel:'noreferrer',
             link: 'https://www.linkedin.com/in/joanna-falkowska-8a30b3150/',
             icon: 'fab fa-linkedin'
         },
         {
             title: 'Instagram',
-            target: 'blank',
+            target: '_blank',
+            rel:'noreferrer',
             link: 'https://www.instagram.com/bonsilapra/',
             icon: 'fab fa-instagram'
         },
@@ -66,6 +71,7 @@ function Footer() {
                         <a 
                             href={link.link}
                             target={link.target}
+                            rel={link.rel}
                             className='social-logo'
                             title={link.title}
                             key={link.title}

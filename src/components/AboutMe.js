@@ -25,11 +25,12 @@ function AboutMe() {
                     <div className='about-text'>
                         <p>My name is Asia and I really enjoy creating pretty and functional websites :&#41; I am looking for my first job as Front-End developer.</p>
                         <p>Having completed my studies in Civil Engineering at the Poznań University of Technology and after working in my profession for couple of years, I decided to change the industry. If you want to learn more details about my work experience check out my&nbsp;
-                            <a href={CV} target='blank'>
+                            <a href={CV} target='_blank' rel='noreferrer'>
                                 <MyButton
                                     buttonStyle='btn--primary-text'
                                     buttonShape='btn--square'
                                     buttonSize='btn--large-onlytext'
+                                    title='CV'
                                 >
                                     CV
                                 </ MyButton>
@@ -37,13 +38,14 @@ function AboutMe() {
                             .
                         </p>
                         <p>I have been learning programming since October 2021. At first, I learned HTML, CSS and JavaScript from tutorials at 
-                            <a href='https://www.w3schools.com/' target='blank'> W3Schools</a>.
+                            <a href='https://www.w3schools.com/' target='_blank' rel='noreferrer'> W3Schools</a>.
                             Then my brother Kuba (who graduated from Computer Science) taught me the basics of using React and Redux. He also created back-end for my first two apps. My skills are listed in the&nbsp;
                             <MyButton
                                 buttonStyle='btn--primary-text'
                                 buttonShape='btn--square'
                                 buttonSize='btn--large-onlytext'
                                 onClick={() => scrollTo('skills')}
+                                title='skills'
                             >
                                 SKILLS&nbsp;
                             </ MyButton>
@@ -55,6 +57,7 @@ function AboutMe() {
                                 buttonShape='btn--square'
                                 buttonSize='btn--large-onlytext'
                                 onClick={() => scrollTo('projects')}
+                                title='projects'
                             >
                                 PROJECTS&nbsp;
                             </ MyButton>
@@ -65,6 +68,7 @@ function AboutMe() {
                                 buttonShape='btn--square'
                                 buttonSize='btn--large-onlytext'
                                 onClick={() => scrollTo('contact')}
+                                title='contact'
                             >
                                 CONTACT&nbsp;
                             </ MyButton>
@@ -74,6 +78,7 @@ function AboutMe() {
                                 buttonShape='btn--square'
                                 buttonSize='btn--large-onlytext'
                                 onClick={() => scrollTo('hobbies')}
+                                title='hobbies'
                             >
                                 HOBBIES&nbsp;
                             </ MyButton>
@@ -83,6 +88,7 @@ function AboutMe() {
                                 buttonShape='btn--square'
                                 buttonSize='btn--large-onlytext'
                                 onClick={() => scrollTo('dogs')}
+                                title='dogs'
                             >
                                 DOGS&nbsp;
                             </ MyButton>

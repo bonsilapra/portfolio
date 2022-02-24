@@ -22,6 +22,7 @@ function Project({appName, appDescription,appIcons, img, linkLive, linkGithub}) 
                                     buttonShape='btn--square'
                                     buttonSize='btn--medium'
                                     disabled={true}
+                                    title='project-tech'
                                 >
                                     {icon}
                                 </ MyButton>
@@ -34,24 +35,26 @@ function Project({appName, appDescription,appIcons, img, linkLive, linkGithub}) 
                 <img src={img} alt='project-img' className='project-img'/>
                 <div className='project-links'>
                     <div>
-                        <a href={linkLive} target='blank'>
+                        <a href={linkLive} target='_blank' rel='noreferrer'>
                             <MyButton
                                 buttonStyle='btn--red'
                                 buttonShadow='btn--light'
                                 buttonShape='btn--square'
                                 buttonSize='btn--large'
+                                title='Live-demo'
                             >
                                 LIVE DEMO
                             </ MyButton>
                         </a>
                     </div>
                     <div>
-                        <a href={linkGithub} target='blank'>
+                        <a href={linkGithub} target='_blank' rel='noreferrer'>
                             <MyButton
                                 buttonStyle='btn--primary'
                                 buttonShadow='btn--light'
                                 buttonShape='btn--square'
                                 buttonSize='btn--large'
+                                title='Github'
                             >
                                 GITHUB
                             </ MyButton>
