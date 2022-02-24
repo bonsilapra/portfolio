@@ -95,7 +95,7 @@ form textarea {
 form input,
 form textarea {
     background-color: var(--light);
-    width: 95%;
+    width: 100%;
 }
 
 form label {
@@ -103,6 +103,7 @@ form label {
     font-weight: 800;
     padding-bottom: 10px;
     color: var(--dark);
+    width: 95%;
 }
 
 form button {

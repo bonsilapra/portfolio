@@ -120,7 +120,7 @@ function Contact() {
                         <button 
                             type='submit'
                             disabled={toSend.from_name.length == 0 || toSend.from_email.length == 0 || toSend.message.length == 0}
-                            title='submit'
+                            aria-label='submit'
                         >
                             SEND <i className="fas fa-paper-plane"></i>
                         </button>
@@ -133,7 +133,7 @@ function Contact() {
                     buttonShadow='btn--light'
                     buttonShape='btn--round'
                     onClick={() => scrollTo('dogs')}
-                    title='previous'
+                    aria-label='previous'
                 >
                     <i className="fas fa-chevron-up" style={{fontSize:'25px'}}></i>
                 </MyButton>

@@ -24,7 +24,7 @@ function Start() {
                             buttonStyle='btn--primary'
                             buttonSize='btn--large'
                             onClick={() => scrollTo('projects')}
-                            title='projects'
+                            aria-label='projects'
                         >
                             Projects
                         </MyButton>
@@ -34,7 +34,7 @@ function Start() {
                             buttonStyle='btn--red'
                             buttonSize='btn--large'
                             onClick={() => scrollTo('contact')}
-                            title='contact'
+                            aria-label='contact'
                         >
                             Contact
                         </MyButton>
@@ -46,7 +46,7 @@ function Start() {
                     buttonShadow='btn--light'
                     buttonShape='btn--round'
                     onClick={() => scrollTo('aboutMe')}
-                    title='next'
+                    aria-label='next'
                 >
                     <i className="fas fa-chevron-down" style={{fontSize:'25px'}}></i>
                 </MyButton>

@@ -22,7 +22,7 @@ function Project({appName, appDescription,appIcons, img, linkLive, linkGithub}) 
                                     buttonShape='btn--square'
                                     buttonSize='btn--medium'
                                     disabled={true}
-                                    title='project-tech'
+                                    aria-label='project-tech'
                                 >
                                     {icon}
                                 </ MyButton>
@@ -41,7 +41,7 @@ function Project({appName, appDescription,appIcons, img, linkLive, linkGithub}) 
                                 buttonShadow='btn--light'
                                 buttonShape='btn--square'
                                 buttonSize='btn--large'
-                                title='Live-demo'
+                                aria-label='Live-demo'
                             >
                                 LIVE DEMO
                             </ MyButton>
@@ -54,7 +54,7 @@ function Project({appName, appDescription,appIcons, img, linkLive, linkGithub}) 
                                 buttonShadow='btn--light'
                                 buttonShape='btn--square'
                                 buttonSize='btn--large'
-                                title='Github'
+                                aria-label='Github'
                             >
                                 GITHUB
                             </ MyButton>

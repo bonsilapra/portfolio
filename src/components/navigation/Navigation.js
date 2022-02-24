@@ -68,7 +68,7 @@ function Navigation() {
                                 buttonShape='btn--mobile'
                                 buttonSize='btn--large-mobile'
                                 onClick={() => {scrollTo(button.scroll); closeMobileMenu()}}
-                                title={button.name}
+                                aria-label={button.name}
                             >
                                 {button.name}
                             </MyButton>  
@@ -83,7 +83,7 @@ function Navigation() {
                                 buttonShape='btn--square'
                                 buttonSize='btn--large'
                                 onClick={() => {scrollTo(button.scroll)}}
-                                title={button.name}
+                                aria-label={button.name}
                             >
                                 {button.name}
                             </MyButton>  
@@ -96,7 +96,7 @@ function Navigation() {
                         buttonShape='btn--square'
                         buttonSize='btn--large'
                         onClick={handleClick}
-                        title='mobile-menu'
+                        aria-label='mobile-menu'
                         >
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </MyButton>
