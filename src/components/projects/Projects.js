@@ -2,11 +2,12 @@ import React from 'react';
 import '../Commons.css';
 import './Projects.css';
 import Project from './Project';
-import todo from '../../images/todo.png'
-import todopl from '../../images/todopl.png'
-import portfolio from '../../images/portfolio.png'
-import yourshelfy from '../../images/yourshelfy.png'
-import kgp from '../../images/kgp.png'
+import todo from '../../images/todo.jpg'
+import todopl from '../../images/todopl.jpg'
+import portfolio from '../../images/portfolio.jpg'
+import yourshelfy from '../../images/yourshelfy.jpg'
+import kgp from '../../images/kgp.jpg'
+import meals from '../../images/meals.jpg'
 import ScrollButtons from '../ScrollButtons.js';
 
 
@@ -34,7 +35,7 @@ function Projects() {
             name: 'Meal ideas', 
             description: 'This app was created to list and organize meal ideas. It allows you to create a database of different types of meals and sort it according to selected criteria.',
             icons: ["React", "JavaScript", "HTML", "CSS", "SASS"],
-            image: portfolio,
+            image: meals,
             linkLive: 'http://joanna-falkowska.pl/meal-ideas/',
             linkGithub: 'https://github.com/bonsilapra/meal-ideas'
         },
