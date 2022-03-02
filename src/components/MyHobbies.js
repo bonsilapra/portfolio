@@ -4,9 +4,9 @@ import './MyHobbies.css';
 import ScrollButtons from './ScrollButtons.js';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
-import hobby1 from '../images/photos/hobby1.jpg';
-import hobby2 from '../images/photos/hobby2.jpg';
-import hobby3 from '../images/photos/hobby3.jpg'
+import hobby1 from '../images/photos/hobby1.webp';
+import hobby2 from '../images/photos/hobby2.webp';
+import hobby3 from '../images/photos/hobby3.webp'
 
 
 function MyHobbies() {

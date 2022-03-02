@@ -2,7 +2,7 @@ import React from 'react';
 import './Commons.css';
 import './AboutMe.css';
 import ScrollButtons from './ScrollButtons.js';
-import profile from '../images/photos/profile.png'
+import profile from '../images/photos/profile.webp'
 import { MyButton } from './myButtons/MyButtons';
 import CV from '../pdf/CV.pdf'
 

@@ -2,12 +2,12 @@ import React from 'react';
 import '../Commons.css';
 import './Projects.css';
 import Project from './Project';
-import todo from '../../images/todo.jpg'
-import todopl from '../../images/todopl.jpg'
-import portfolio from '../../images/portfolio.jpg'
-import yourshelfy from '../../images/yourshelfy.jpg'
-import kgp from '../../images/kgp.jpg'
-import meals from '../../images/meals.jpg'
+import todo from '../../images/todo.webp'
+import todopl from '../../images/todopl.webp'
+import portfolio from '../../images/portfolio.webp'
+import yourshelfy from '../../images/yourshelfy.webp'
+import kgp from '../../images/kgp.webp'
+import meals from '../../images/meals.webp'
 import ScrollButtons from '../ScrollButtons.js';
 
 

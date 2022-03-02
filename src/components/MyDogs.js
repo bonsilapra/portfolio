@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import './Commons.css';
 import './MyDogs.css';
 import ScrollButtons from './ScrollButtons.js';
-import rico from '../images/photos/rico.jpg';
-import luna from '../images/photos/luna.jpg';
+import rico from '../images/photos/rico.webp';
+import luna from '../images/photos/luna.webp';
 
 function MyDogs() {
 

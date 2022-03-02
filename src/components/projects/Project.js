@@ -22,7 +22,7 @@ function Project({appName, appDescription,appIcons, img, linkLive, linkGithub}) 
                                     buttonShape='btn--square'
                                     buttonSize='btn--medium'
                                     disabled={true}
-                                    aria-label='project-tech'
+                                    aria-label={icon}
                                 >
                                     {icon}
                                 </ MyButton>
