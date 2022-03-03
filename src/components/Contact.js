@@ -109,7 +109,7 @@ function Contact() {
                                 onChange={handleChange}
                             />
                         </label>
-                        <label>Messange:
+                        <label>Message:
                             <textarea 
                                 name='message' 
                                 rows='8'  

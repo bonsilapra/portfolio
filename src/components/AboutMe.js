@@ -49,7 +49,7 @@ function AboutMe() {
                             >
                                 SKILLS&nbsp;
                             </ MyButton>
-                            section 
+                            section.
                         </p>
                         <p>Currently, I learn through practice by creating websites for my own needs. You can find more about them in&nbsp; 
                             <MyButton

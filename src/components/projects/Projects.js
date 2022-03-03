@@ -49,7 +49,7 @@ function Projects() {
         },
         {
             name: 'Todo App', 
-            description: 'This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js',
+            description: 'This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js.',
             icons: ["React", "JavaScript", "HTML", "CSS"],
             image: todo,
             linkLive: 'http://joanna-falkowska.pl/todo-list/',

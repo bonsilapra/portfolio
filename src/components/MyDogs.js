@@ -59,7 +59,7 @@ function MyDogs() {
                     </button>
                 </div>
                 <div className='dogs-text-container'>
-                    <p>I would like to introduce you my two dogs - <b>Rico</b> (also known as <b>Rysiu</b>) and <b>Luna</b> (usually called <b>Lusia</b>) </p>
+                    <p>I would like to introduce you my two dogs - <b>Rico</b> (also known as <b>Rysiu</b>) and <b>Luna</b> (usually called <b>Lusia</b>). </p>
                     <p>They are mongrels that bring a lot of joy to life. Currently they live with my parents in Konin.</p>
                 </div>
             </div>
