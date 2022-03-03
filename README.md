@@ -1,3 +1,22 @@
+# About
+
+It is my personal website. Here you can find my portfolio and information about me. While creating this website, I mainly practiced using CSS.
+
+## Live demo
+
+[Portfolio](http://joanna-falkowska.pl/)
+
+## Technology stack and tools:
+
+- React.js
+- JavaScript
+- HTML
+- CSS
+- emailjs-com
+- react-dom
+- react-image-gallery
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
