@@ -2,7 +2,8 @@ import React from 'react';
 import '../Commons.css';
 import './Projects.css';
 import Project from './Project';
-import todo from '../../images/todo.webp'
+// import todo from '../../images/todo.webp'
+import calculator from '../../images/calculator.webp'
 import todopl from '../../images/todopl.webp'
 import portfolio from '../../images/portfolio.webp'
 import yourshelfy from '../../images/yourshelfy.webp'
@@ -47,21 +48,30 @@ function Projects() {
             linkLive: 'http://joanna-falkowska.pl/',
             linkGithub: 'https://github.com/bonsilapra/portfolio'
         },
-        {
-            name: 'Todo App', 
-            description: 'This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js.',
-            icons: ["React", "JavaScript", "HTML", "CSS"],
-            image: todo,
-            linkLive: 'http://joanna-falkowska.pl/todo-list/',
-            linkGithub: 'https://github.com/bonsilapra/todo-list'
-        },
+        // {
+        //     name: 'Todo App', 
+        //     description: 'This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js.',
+        //     icons: ["React", "JavaScript", "HTML", "CSS"],
+        //     image: todo,
+        //     linkLive: 'http://joanna-falkowska.pl/todo-list/',
+        //     linkGithub: 'https://github.com/bonsilapra/todo-list'
+        // },
+
         {
             name: 'Todo App - polish', 
-            description: "The second version of Todo App. It was created at my mother's request. Now she uses it at work. There are some changes like polish language, color and different buttons functionality.",
+            description: "This is a simple app created to organize daily tasks. App allows to add, edit, make important/normal and remove tasks. It was created at my mother's request. Now she uses it at work.",
             icons: ["React", "JavaScript", "HTML", "CSS"],
             image: todopl,
             linkLive: 'http://joanna-falkowska.pl/todo-pl/',
             linkGithub: 'https://github.com/bonsilapra/todo-pl'
+        },
+        {
+            name: 'Calculator', 
+            description: "Very simple calculator created with Vanilla JS.",
+            icons: ["JavaScript", "HTML", "CSS"],
+            image: calculator,
+            linkLive: 'https://bonsilapra.github.io/calculator/',
+            linkGithub: 'https://github.com/bonsilapra/calculator'
         },
     ]
 
